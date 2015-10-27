@@ -1,3 +1,21 @@
+/*.img-profile {
+  padding: 10px;
+}*/
+
+@media screen and (max-width: 600px) {  
+  .img-profile {
+    max-width: 200px;
+    max-height: 200px;
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 600px) {  
+  .img-profile {
+    padding: 20px;
+  }
+}
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -12,10 +30,10 @@ body {
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
-.footer {
+/*.footer {
   padding-left: 15px;
   padding-right: 15px;
-}
+}*/
 
 /* Custom page header */
 .header {
@@ -31,12 +49,12 @@ body {
 }
 
 /* Custom page footer */
-.footer {
+/*.footer {
   padding-top: 19px;
   color: #777;
   border-top: 1px solid #e5e5e5;
 }
-
+*/
 .container-narrow > hr {
   margin: 30px 0;
 }
@@ -68,10 +86,10 @@ body {
   /* Remove the padding we set earlier */
   .header,
   .marketing,
-  .footer {
+  /*.footer {
     padding-left: 0;
     padding-right: 0;
-  }
+  }*/
   /* Space out the masthead */
   .header {
     margin-bottom: 30px;
