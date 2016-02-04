@@ -1,6 +1,30 @@
 /*.img-profile {
-  padding: 10px;
+  padding-left: 10px;
 }*/
+
+.tran {
+  opacity: 0;
+}
+
+.m {
+  margin: 15px;
+}
+
+.m-t {
+  margin-top: 15px;
+}
+
+.m-b {
+  margin-bottom: 15px;
+}
+
+.m-l {
+  margin-left: 15px;
+}
+
+.m-r {
+  margin-right: 15px;
+}
 
 @media screen and (max-width: 600px) {  
   .img-profile {
@@ -12,7 +36,7 @@
 
 @media screen and (min-width: 600px) {  
   .img-profile {
-    padding: 20px 20px 250px 20px;
+    padding: 20px 20px 20px 20px;
   }
 }
 

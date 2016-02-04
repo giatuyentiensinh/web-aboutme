@@ -5,7 +5,7 @@ angular.module('amApp')
           $rootScope.$stateParams = $stateParams;
       }]
     ).config(['$stateProvider', '$urlRouterProvider',function($stateProvider, $urlRouterProvider) {
-		$urlRouterProvider.otherwise('/app/help');
+		$urlRouterProvider.otherwise('/app/home');
 
 		$stateProvider
 			.state('app', {
@@ -13,35 +13,39 @@ angular.module('amApp')
 				url: '/app',
 				templateUrl: 'views/layout.html',
 				controller: function($window) {
-					$window.document.title = 'Tuyen page';
+					$window.document.title = 'Tuyen-ng';
 				}
 			})
 			.state('app.home', {
 				url: '/home',
 				templateUrl: 'views/home.html',
-				controller: function($window) {					
-					$window.document.title = 'Tuyen page';
+				controller: function($window, $scope) {					
+					$window.document.title = 'Tuyen-ng';
+
+					$scope.showAnimation = function() {
+						$scope.checkShow = true;
+					};
 				}
 			})
 			.state('app.about', {
 				url: '/about',
 				templateUrl: 'views/about.html',
 				controller: function($window) {					
-					$window.document.title = 'Tuyen page';
+					$window.document.title = 'Tuyen-ng';
 				}
 			})
 			.state('app.contact', {
 				url: '/contact',
 				templateUrl: 'views/contact.html',
 				controller: function($window) {					
-					$window.document.title = 'Tuyen page';
+					$window.document.title = 'Tuyen-ng';
 				}
 			})
 			.state('app.help', {
 				url: '/help',
 				templateUrl: 'views/help.html',
 				controller: function($window) {					
-					$window.document.title = 'xforce team';
+					$window.document.title = 'Bạn bè của tôi';
 				}
 			})
 			.state('kimanh', {
