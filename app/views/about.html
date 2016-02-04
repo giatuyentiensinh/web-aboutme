@@ -1,3 +1,49 @@
+<section class="row">
+	<div class="flow-text m-l">
+		<h1 class="pink-text text-darken-4">Kỹ năng</h1>
+	</div>
+</section>
+
+
+<!-- <section class="row">
+	<ul class="dynamic-grid" angular-grid="pics" grid-width="300" gutter-size="10" angular-grid-id="gallery" refresh-on-img-load="false" >
+	    <li data-ng-repeat="pic in pics" class="grid hoverable" data-ng-clock>
+	        <img ng-src="{{pic.image}}" class="grid-img" data-actual-width = "{{pic.actualWidth}}"  data-actual-height="{{pic.actualHeight}}" />
+	        <a class="m flow-text teal-text text-accent-4" modal href="#{{$index}}-{{pic.name}}">{{pic.name}}</a>
+
+	        <div id="{{$index}}-{{pic.name}}" class="modal">
+	        	<div class="modal-content">
+	        		<h4>{{pic.name}}</h4>
+	        		<img ng-src="{{pic.image}}" class="responsive-img">
+	        	</div>
+        	    <div class="modal-footer">
+			        <a class="modal-action modal-close waves-effect waves-green btn-flat">Exit</a>
+    			</div>
+
+	        </div>
+	    </li>
+	</ul>
+</section> -->
+
+<ul class="flowGrid m" ng-flow-grid="homePageGrid" min-item-width="250">
+    <li class="flowGridItem hoverable" ng-repeat="pic in pics">
+        <img ng-src="{{pic.image}}" />
+        <a class="flow-text teal-text text-accent-4 m" modal href="#{{$index}}-{{pic.name}}">{{pic.name}}</a>
+
+        <div id="{{$index}}-{{pic.name}}" class="modal">
+	    	<div class="modal-content">
+	    		<h4 class="yellow-text text-accent-4">{{pic.name}}</h4>
+	    		<img ng-src="{{pic.image}}" class="responsive-img">
+	    	</div>
+		    <div class="modal-footer">		    
+		        <a class="modal-action modal-close waves-effect waves-red btn-flat">Exit</a>
+			</div>
+
+	    </div>
+    </li>
+</ul>
+
+<!-- 
 <div class="card">
 	<div class="card-image waves-effect waves-block waves-light">
 		<img class="activator" src="images/WP_20150118_001.jpg">
@@ -10,4 +56,4 @@
 		<span class="card-title grey-text text-darken-4">Mộc Châu<i class="material-icons right" close>Đóng</i></span>
 		<p>Buổi sáng ngày 18/01/2015 ở Mộc Châu</p>
 	</div>
-</div>
+</div> -->
