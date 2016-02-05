@@ -31,6 +31,7 @@ angular.module('amApp')
 				templateUrl: 'views/about.html',
 				controller: function($window, $scope) {
 					$window.document.title = 'Tuyen-ng';
+
 					$scope.pics = [
 						{
 							image: 'images/playframework.png',

@@ -27,7 +27,7 @@
 
 <ul class="flowGrid m" ng-flow-grid="homePageGrid" min-item-width="250">
     <li class="flowGridItem hoverable" ng-repeat="pic in pics">
-        <img ng-src="{{pic.image}}" />
+        <img ng-src="{{pic.image}}"/>
         <a class="flow-text teal-text text-accent-4 m" modal href="#{{$index}}-{{pic.name}}">{{pic.name}}</a>
 
         <div id="{{$index}}-{{pic.name}}" class="modal">
