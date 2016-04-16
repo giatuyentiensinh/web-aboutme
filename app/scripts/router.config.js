@@ -115,7 +115,7 @@ angular.module('amApp')
 							image: 'images/grunt.png',
 							actualWidth: 533,
 							actualHeight: 185,
-							name: 'bower'
+							name: 'grunt'
 						},
 						{
 							image: 'images/java.png',

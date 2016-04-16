@@ -6,43 +6,11 @@ angular.module('amApp')
 
 	    $scope.audios = [
 	      {
-	        title: 'Happy new years',
-	        artist: 'ABBA',
-	        poster: 'zing mp3',
+	        title: 'Chắc haivl sẽ không về',
+	        artist: 'Huy JOo',
+	        poster: 'youtube.com',
 	        sources: [
-	          {src: $sce.trustAsResourceUrl('http://mp3.zing.vn/xml/load-song/MjAxMSUyRjEyJTJGMjIlMkY3JTJGNCUyRjc0YmViY2I3MjA4NjYwMWQ0MGNiZjU1ZDU1ZTU1NjE2Lm1wMyU3QzI='), type: 'audio/mpeg'}
-	        ]
-	      },
-	      {
-	        title: 'Auld Lang Syne',
-	        artist: 'Mariah Carey',
-	        poster: 'zing mp3',
-	        sources: [
-	          {src: $sce.trustAsResourceUrl('http://aredir.nixcdn.com/cba5d57653ed6c508cf8b50228e5ea5e/56b2a4c3/NhacCuaTui228/AuldLangSyne-MariahCarey_3mk5c.mp3'), type: 'audio/mpeg'}
-	        ]
-	      },
-	      {
-	        title: 'Ngày Xuân Long Phụng Sum Vầy',
-	        artist: 'Nhóm Thủy Tinh',
-	        poster: 'zing mp3',
-	        sources: [
-	          {src: $sce.trustAsResourceUrl('http://mp3.zing.vn/xml/load-song/MjAxMSUyRjA2JTJGMDYlMkY5JTJGZiUyRjlmNzkzYzYyNWYxZGYxNWEyNGI5MjJhMGNlYTY0YjVjLm1wMyU3QzI='), type: 'audio/mpeg'}
-	        ]
-	      },
-	      {
-	        title: 'Con Bướm Xuân',
-	        artist: 'Hồ Quang Hiếu',
-	        poster: 'zing mp3',
-	        sources: [
-	          {src: $sce.trustAsResourceUrl('http://mp3.zing.vn/xml/load-song/MjAxMyUyRjA2JTJGMDMlMkZlJTJGZCUyRmVkMDRiMmMyNGU1OWY3ZTcxNmQyOTUyZWUxNzg0NWYxLm1wMyU3QzI='), type: 'audio/mpeg'}
-	        ]
-	      },
-	      {
-	        title: 'Thương Quá Việt Nam Ơi',
-	        artist: 'Quang Linh',
-	        poster: 'zing mp3',
-	        sources: [
-	          {src: $sce.trustAsResourceUrl('http://mp3.zing.vn/xml/load-song/ZSUyRjYyJTJGZTYyNWUzNGMzMTUwMWIxYjg2MmEyYTE3NGVkYTFmZTUubXAzJTdDMQ=='), type: 'audio/mpeg'}
+	          {src: $sce.trustAsResourceUrl('/font/haivl.mp3'), type: 'audio/mpeg'}
 	        ]
 	      },
 	      {
@@ -52,31 +20,24 @@ angular.module('amApp')
 	        sources: [
 	          {src: $sce.trustAsResourceUrl('http://mp3.zing.vn/xml/load-song/MjAxNSUyRjEyJTJGMzElMkZlJTJGMSUyRmUxNTcxNTAwOTg4NDg5MzllYTE2ZmZhYzFjMGJjYTQxLm1wMyU3QzEz'), type: 'audio/mpeg'}
 	        ]
+	      },
+	      {
+	        title: 'Make You Feel My Love',
+	        artist: 'Adele',
+	        poster: 'zing mp3',
+	        sources: [
+	          {src: $sce.trustAsResourceUrl('http://mp3.zing.vn/xml/load-song/MjAxMSUyRjAyJTJGMjIlMkZiJTJGMiUyRmIyMGM3NmRiZmZmNTQ1MzE2N2QzMjlmZGI3MTI0MTA2Lm1wMyU3QzI='), type: 'audio/mpeg'}
+	        ]
+	      },
+	      {
+	        title: 'Con Mua Ngang Qua Acoustic',
+	        artist: 'Hoa Minzy ft Duy Tung ft Tyt Nguyen',
+	        poster: 'zing mp3',
+	        sources: [
+	          {src: $sce.trustAsResourceUrl('http://mp3.zing.vn/xml/load-song/MjAxNSUyRjA1JTJGMTMlMkYyJTJGOSUyRjI5ZGZlMzNiNmY4NWNiNjkzOWFlZDkzM2Y5ZDIyZmNhLm1wMyU3QzEy'), type: 'audio/mpeg'}
+	        ]
 	      }
-	      // {
-	      //   title: 'Make You Feel My Love.mp3',
-	      //   artist: 'N/A',
-	      //   poster: null,
-	      //   sources: [
-	      //     {src: $sce.trustAsResourceUrl('http://aredir.nixcdn.com/9e84dc91f6fe6531c4950ae7ca1598d4/56b25e78/NhacCuaTui103/MakeYouFeelMyLove-Adele_pesg.mp3'), type: 'audio/mpeg'}
-	      //   ]
-	      // },
-	      // {
-	      //   title: 'Con Mua Ngang Qua Acoustic.mp3',
-	      //   artist: 'Hoa Minzy ft Duy Tung ft Tyt Nguyen',
-	      //   poster: null,
-	      //   sources: [
-	      //     {src: $sce.trustAsResourceUrl('http://aredir.nixcdn.com/ccce05842d4894f70f485d6f92fd129b/56b25e78/NhacCuaTui845/ConMuaNgangQuaAcoustic-HoaMinzyTungAcoustic-2862764.mp3'), type: 'audio/mpeg'}
-	      //   ]
-	      // },
-	      // {
-	      //   title: 'Cheerleader.mp3',
-	      //   artist: 'Pentatonix (OMI Cover)',
-	      //   poster: null,
-	      //   sources: [
-	      //     {src: $sce.trustAsResourceUrl('http://aredir.nixcdn.com/e425238793af6b75d4774efcfd96696e/56b25e78/NhacCuaTui904/Cheerleader-Pentatonix-4084660.mp3'), type: 'audio/mpeg'}
-	      //   ]
-	      // }
+	      
 	      
 	    ];
 
@@ -127,6 +88,7 @@ angular.module('amApp')
 	      if ( !(i-index) ){
 	        i = $scope.getRandom( index );
 	      }
+	      Materialize.toast($scope.audios[i].title + '<br/> Ca sĩ: ' + $scope.audios[i].artist, 7000);
 	      return i;
 	    }
 
