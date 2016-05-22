@@ -4,17 +4,31 @@ angular.module('amApp')
         $rootScope.$state = $state;
         $rootScope.$stateParams = $stateParams;
         $rootScope.$on('$stateChangeSuccess', function(event) {
-            $window.ga('send', 'pageview', $location.path());
+            // $window.ga('send', 'pageview', $location.path());
         });
-    }]).config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
+    }])
+    .config(function($translateProvider) {
+        $translateProvider
+            .translations('es', lang_es)
+            .translations('vn', lang_vi)
+            .preferredLanguage('es');
+    })
+    .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
         $urlRouterProvider.otherwise('/app/home');
         $stateProvider
             .state('app', {
                 abstract: true,
                 url: '/app',
                 templateUrl: 'views/layout.html',
-                controller: function($window) {
+                controller: function($window, $translate, $scope) {
                     $window.document.title = 'Tuyen-ng';
+                    $scope.changelang = function(lang) {
+                        if ('vn' === lang) {
+                            $translate.use('vn');
+                        } else if ('es' === lang) {
+                            $translate.use('es');
+                        }
+                    };
                 }
             })
             .state('app.home', {
@@ -22,7 +36,7 @@ angular.module('amApp')
                 templateUrl: 'views/home.html',
                 controller: function($window, $location, $scope) {
                     $window.document.title = 'Tuyen-ng';
-                    $window.ga('send', 'pageview', 'Home');
+                    // $window.ga('send', 'pageview', 'Home');
                     $scope.showAnimation = function() {
                         $scope.checkShow = true;
                     };
@@ -33,7 +47,7 @@ angular.module('amApp')
                 templateUrl: 'views/about.html',
                 controller: function($window, $location, $scope) {
                     $window.document.title = 'Tuyen-ng';
-                    $window.ga('send', 'pageview', 'skill');
+                    // $window.ga('send', 'pageview', 'skill');
                     $scope.pics = [{
                         image: 'images/playframework.png',
                         actualWidth: 630,
@@ -137,7 +151,7 @@ angular.module('amApp')
                 templateUrl: 'views/contact.html',
                 controller: function($window, $location) {
                     $window.document.title = 'Project';
-                    $window.ga('send', 'pageview', 'Project tham gia');
+                    // $window.ga('send', 'pageview', 'Project tham gia');
                 }
             })
             .state('app.help', {
@@ -145,7 +159,7 @@ angular.module('amApp')
                 templateUrl: 'views/help.html',
                 controller: function($window, $location) {
                     $window.document.title = 'Bạn bè của tôi';
-                    $window.ga('send', 'pageview', 'Bạn bè');
+                    // $window.ga('send', 'pageview', 'Bạn bè');
                 }
             })
             .state('kimanh', {
@@ -154,7 +168,7 @@ angular.module('amApp')
                 templateUrl: 'views/kimanh/kimanh.html',
                 controller: function($window, $location) {
                     $window.document.title = 'Kim Anh page';
-                    $window.ga('send', 'pageview', 'Kim Anh');
+                    // $window.ga('send', 'pageview', 'Kim Anh');
                 }
             })
             .state('kimanh.tongquan', {

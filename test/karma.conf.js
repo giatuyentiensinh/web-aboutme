@@ -38,6 +38,7 @@ module.exports = function(config) {
       'bower_components/videogular-poster/poster.js',
       'bower_components/videogular-overlay-play/overlay-play.js',
       'bower_components/ngFlowGrid/src/ngFlowGrid.js',
+      'bower_components/angular-translate/angular-translate.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
       "app/scripts/**/*.js",

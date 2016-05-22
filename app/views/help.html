@@ -1,66 +1,77 @@
-
-
 <div class="row blue-grey lighten-4">
-	<div class="col s12 m6">
-		<div class="card small cyan darken-4">
-			<img src="images/image-tuananh.jpg" class="img-profile circle responsive-img right" tooltipped data-position="bottom" data-delay="50" data-tooltip="Sở thích qwerty">
-			<div class="card-content white-text">
-				<span class="card-title"><span class="hide-on-small-only">Bùi </span>Tuấn Ánh</span>
-				<p>Mặt babe trông rất <span class="cyan-text text-lighten-4">cute</span></p>
-			</div>
-			<div class="card-action">
-				<a href onclick="Materialize.toast('Chưa cập nhật', 4000)">Chi tiết</a>
-			</div>
-		</div>
-	</div>
-	<div class="col s12 m6">
-		<div class="card small green darken-4">
-			<img src="images/image-dinhphuc.jpg" class="img-profile circle responsive-img right" tooltipped data-position="bottom" data-delay="50" data-tooltip="Sở thích bắn thằn lằn với thạch sùng">
-			<div class="card-content white-text">
-				<span class="card-title"><span class="hide-on-small-only">Nguyễn </span>Đình Phúc</span>
-				<p>Thiên sứ <span class="green-text text-lighten-4">thằn lằn</span></p>
-			</div>
-			<div class="card-action">
-				<a href onclick="Materialize.toast('Chưa cập nhật', 4000)">Chi tiết</a>
-			</div>
-		</div>
-	</div>
-
-	<div class="col s12 m6 offset-m3">
-		<div class="card small indigo draken-4">
-			<img src="images/image-tuyen.jpg" class="img-profile circle responsive-img right" tooltipped data-position="bottom" data-delay="50" data-tooltip="Sở thích research take more money">
-			<div class="card-content white-text">
-				<span class="card-title"><span class="hide-on-small-only">Nguyễn </span>Gia Tuyến</span>
-				<p>Analyst data</p>
-			</div>
-			<div class="card-action">
-				<a href onclick="Materialize.toast('Chưa cập nhật', 4000)">Chi tiết</a>
-			</div>
-		</div>
-	</div>
-
-	<div class="col s12 m6">
-		<div class="card small pink darken-4">
-			<img src="images/image-kimanh.jpg" class="img-profile circle responsive-img right" tooltipped data-position="bottom" data-delay="50" data-tooltip="Sở thích Ảo tưởng sức mạnh">
-			<div class="card-content white-text">
-				<span class="card-title"><span class="hide-on-small-only">Lê Thị </span>Kim Anh</span>
-				<p>Đã bựa nay còn <span class="pink-text text-lighten-1">bựa hơn</span></p>
-			</div>
-			<div class="card-action">
-				<a ui-sref="kimanh.tongquan">Chi tiết</a>
-			</div>
-		</div>
-	</div>
-	<div class="col s12 m6">
-		<div class="card small blue darken-4">
-			<img src="images/image-anhtuan.jpg" class="img-profile circle responsive-img right" tooltipped data-position="bottom" data-delay="50" data-tooltip="Sở thích N/A">
-			<div class="card-content white-text">
-				<span class="card-title"><span class="hide-on-small-only">Đoàn </span>Anh Tuấn</span>
-					<p>Nguy hiểm đến từng <span class="blue-text text-lighten-4">centimeters</span></p>
-			</div>
-			<div class="card-action">
-				<a href onclick="Materialize.toast('Chưa cập nhật', 4000)">Chi tiết</a>
-			</div>
-		</div>
-	</div>	
+    <div class="col s12 m6">
+        <div class="card small cyan darken-4">
+            <img src="images/image-tuananh.jpg" class="img-profile circle responsive-img right" tooltipped data-position="bottom" data-delay="50" data-tooltip="{{'FRIEND.F1.HOBIT' | translate }}">
+            <div class="card-content white-text">
+                <span class="card-title">
+					<span class="hide-on-small-only" translate="FRIEND.F1.FIRST_NAME"></span>
+                	<span translate="FRIEND.F1.LAST_NAME"></span>
+                </span>
+                <p class="cyan-text text-lighten-4" translate="FRIEND.F1.DESCRIPTION"></p>
+            </div>
+            <div class="card-action">
+                <a href onclick="Materialize.toast('Chưa cập nhật', 4000)" translate="FRIEND.DETAIL"></a>
+            </div>
+        </div>
+    </div>
+    <div class="col s12 m6">
+        <div class="card small green darken-4">
+            <img src="images/image-dinhphuc.jpg" class="img-profile circle responsive-img right" tooltipped data-position="bottom" data-delay="50" data-tooltip="{{'FRIEND.F2.HOBIT' | translate }}">
+            <div class="card-content white-text">
+                <span class="card-title">
+					<span class="hide-on-small-only" translate="FRIEND.F2.FIRST_NAME"></span>
+                	<span translate="FRIEND.F2.LAST_NAME"></span>
+                </span>
+                <p class="green-text text-lighten-4" translate="FRIEND.F2.DESCRIPTION"></p>
+            </div>
+            <div class="card-action">
+                <a href onclick="Materialize.toast('Chưa cập nhật', 4000)" translate="FRIEND.DETAIL"></a>
+            </div>
+        </div>
+    </div>
+    <div class="col s12 m6 offset-m3">
+        <div class="card small indigo draken-4">
+            <img src="images/image-tuyen.jpg" class="img-profile circle responsive-img right" tooltipped data-position="bottom" data-delay="50" data-tooltip="{{'FRIEND.F3.HOBIT' | translate }}">
+            <div class="card-content white-text">
+                <span class="card-title">
+					<span class="hide-on-small-only" translate="FRIEND.F3.FIRST_NAME"></span>
+                	<span translate="FRIEND.F3.LAST_NAME"></span>
+                </span>
+                <p translate="FRIEND.F3.DESCRIPTION"></p>
+            </div>
+            <div class="card-action">
+                <a href onclick="Materialize.toast('Chưa cập nhật', 4000)" translate="FRIEND.DETAIL"></a>
+            </div>
+        </div>
+    </div>
+    <div class="col s12 m6">
+        <div class="card small pink darken-4">
+            <img src="images/image-kimanh.jpg" class="img-profile circle responsive-img right" tooltipped data-position="bottom" data-delay="50" data-tooltip="{{'FRIEND.F4.HOBIT' | translate }}">
+            <div class="card-content white-text">
+                <span class="card-title">
+					<span class="hide-on-small-only" translate="FRIEND.F4.FIRST_NAME"></span>
+                	<span translate="FRIEND.F4.LAST_NAME"></span>
+                </span>
+                <p class="pink-text text-lighten-1" translate="FRIEND.F4.DESCRIPTION"></p>
+            </div>
+            <div class="card-action">
+                <a ui-sref="kimanh.tongquan" translate="FRIEND.DETAIL"></a>
+            </div>
+        </div>
+    </div>
+    <div class="col s12 m6">
+        <div class="card small blue darken-4">
+            <img src="images/image-anhtuan.jpg" class="img-profile circle responsive-img right" tooltipped data-position="bottom" data-delay="50" data-tooltip="{{'FRIEND.F5.HOBIT' | translate }}">
+            <div class="card-content white-text">
+                <span class="card-title">
+					<span class="hide-on-small-only" translate="FRIEND.F5.FIRST_NAME"></span>
+                	<span translate="FRIEND.F5.LAST_NAME"></span>
+                </span>
+                <p class="blue-text text-lighten-4" translate="FRIEND.F5.DESCRIPTION"></p>
+            </div>
+            <div class="card-action">
+                <a href onclick="Materialize.toast('Chưa cập nhật', 4000)" translate="FRIEND.DETAIL"></a>
+            </div>
+        </div>
+    </div>
 </div>

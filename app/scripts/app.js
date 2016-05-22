@@ -22,7 +22,8 @@ angular
 	'com.2fdevs.videogular.plugins.controls',
 	'com.2fdevs.videogular.plugins.overlayplay',
 	'com.2fdevs.videogular.plugins.poster',
-	'com.2fdevs.videogular.plugins.buffering'
+	'com.2fdevs.videogular.plugins.buffering',
+    'pascalprecht.translate'
   ]);
 
 // Materialize.toast('<div class="red-text text-darken-4 flow-text">Chúc mừng năm mới<div><div class="m-t red-text text-darken-3">An Khang - Thịnh Vượng</div>', 5000);
