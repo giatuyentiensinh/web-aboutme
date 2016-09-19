@@ -31,4 +31,6 @@ $ grunt test
 
 ```
 
+# Sau khi compile thì copy folder font trong folder app vào folder dist.
+
 # Auth: Tuyen-ng
