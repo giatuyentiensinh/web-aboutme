@@ -67,12 +67,32 @@ angular.module('amApp')
                         image: 'images/cassandra.png',
                         actualWidth: 1280,
                         actualHeight: 858,
-                        name: 'cassandra'
+                        name: 'Cassandra'
+                    }, {
+                        image: 'images/hadoop.png',
+                        actualWidth: 500,
+                        actualHeight: 500,
+                        name: 'Hadoop'
+                    }, {
+                        image: 'images/spark.png',
+                        actualWidth: 500,
+                        actualHeight: 500,
+                        name: 'Apache Spark'
+                    }, {
+                        image: 'images/phoenix.png',
+                        actualWidth: 500,
+                        actualHeight: 500,
+                        name: 'Apache phoenix'
+                    }, {
+                        image: 'images/docker.png',
+                        actualWidth: 500,
+                        actualHeight: 500,
+                        name: 'Docker'
                     }, {
                         image: 'images/mysql.png',
                         actualWidth: 320,
                         actualHeight: 166,
-                        name: 'mysql'
+                        name: 'RDBMS'
                     }, {
                         image: 'images/materialize.png',
                         actualWidth: 600,
@@ -84,11 +104,6 @@ angular.module('amApp')
                         actualHeight: 300,
                         name: 'bootstrap'
                     }, {
-                        image: 'images/scraping.png',
-                        actualWidth: 625,
-                        actualHeight: 336,
-                        name: 'scrapy'
-                    }, {
                         image: 'images/rabbitmq.png',
                         actualWidth: 800,
                         actualHeight: 153,
@@ -99,10 +114,25 @@ angular.module('amApp')
                         actualHeight: 181,
                         name: 'angularjs'
                     }, {
+                        image: 'images/nodejs.png',
+                        actualWidth: 681,
+                        actualHeight: 181,
+                        name: 'nodejs'
+                    }, {
                         image: 'images/titan.png',
                         actualWidth: 550,
                         actualHeight: 378,
                         name: 'titandb'
+                    }, {
+                        image: 'images/tinkerpop.png',
+                        actualWidth: 550,
+                        actualHeight: 378,
+                        name: 'Tinkerpop'
+                    }, {
+                        image: 'images/neo4j.png',
+                        actualWidth: 550,
+                        actualHeight: 378,
+                        name: 'Neo4j'
                     }, {
                         image: 'images/yeoman.png',
                         actualWidth: 600,
@@ -114,6 +144,11 @@ angular.module('amApp')
                         actualHeight: 600,
                         name: 'bower'
                     }, {
+                        image: 'images/Linux.png',
+                        actualWidth: 500,
+                        actualHeight: 500,
+                        name: 'Linux'
+                    }, {
                         image: 'images/grunt.png',
                         actualWidth: 533,
                         actualHeight: 185,
@@ -124,25 +159,10 @@ angular.module('amApp')
                         actualHeight: 518,
                         name: 'java'
                     }, {
-                        image: 'images/javascript.png',
-                        actualWidth: 512,
-                        actualHeight: 512,
-                        name: 'javascript'
-                    }, {
                         image: 'images/maven.png',
                         actualWidth: 500,
                         actualHeight: 144,
                         name: 'Maven'
-                    }, {
-                        image: 'images/git.png',
-                        actualWidth: 600,
-                        actualHeight: 600,
-                        name: 'Git'
-                    }, {
-                        image: 'images/ubuntu.png',
-                        actualWidth: 500,
-                        actualHeight: 500,
-                        name: 'Ubuntu'
                     }];
                 }
             })

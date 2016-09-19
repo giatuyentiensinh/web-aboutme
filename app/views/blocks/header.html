@@ -1,29 +1,46 @@
 <header class="navbar-fixed">
-	<nav>
-		<div class="nav-wrapper light-blue darken-4">
-			<a ui-sref="app.home" class="brand-logo waves-effect waves-light m-l"><span class="light">ng</span> - <span class="flow-text">Tuyến</span></a>
-			<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-			<ul class="right hide-on-med-and-down">
-				<li ui-sref-active='active' class="light-blue darken-4 waves-effect waves-light" tooltipped data-position="bottom" data-delay="50" data-tooltip="Trang chủ"><a ui-sref="app.home"><i class="mdi-hardware-security"></i></a></li>
-				<li ui-sref-active='active' class="light-blue darken-3 waves-effect waves-light" tooltipped data-position="bottom" data-delay="50" data-tooltip="Kỹ năng"><a ui-sref="app.about"><i class="mdi-notification-adb"></i></a></li>
-				<li ui-sref-active='active' class="light-blue darken-2 waves-effect waves-light" tooltipped data-position="bottom" data-delay="50" data-tooltip="Dự án đã tham gia"><a ui-sref="app.contact"><i class="mdi-maps-beenhere"></i></a></li>
-				<li ui-sref-active='active' class="light-blue darken-1 waves-effect waves-light"><a ui-sref="app.help"><i class="mdi-social-people"></i></a></li>
-			</ul>
-			<ul class="side-nav" id="mobile-demo">
-				<li ui-sref-active='active'><a class="waves-effect waves-blue" ui-sref="app.home">Trang chủ</a></li>
-				<li ui-sref-active='active'><a class="waves-effect waves-blue" ui-sref="app.about">Kỹ năng</a></li>
-				<li ui-sref-active='active'><a class="waves-effect waves-blue" ui-sref="app.contact">Dự án đã tham gia</a></li>
-				<li ui-sref-active='active'><a class="waves-effect waves-blue" ui-sref="app.help">Thông tin</a></li>
-			</ul>
-		</div>
-	</nav>
+    <nav>
+        <div class="nav-wrapper light-blue darken-4">
+            <a ui-sref="app.home" class="brand-logo waves-effect waves-light m-l"><span class="light">ng</span> - <span class="flow-text">Tuyến</span></a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse">
+                <i class="material-icons">reorder</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li ui-sref-active='active' class="light-blue darken-4 waves-effect waves-light" tooltipped data-position="bottom" data-delay="50" data-tooltip="Trang chủ">
+                    <a ui-sref="app.home">
+                        <i class="material-icons">home</i>
+                    </a>
+                </li>
+                <li ui-sref-active='active' class="light-blue darken-3 waves-effect waves-light" tooltipped data-position="bottom" data-delay="50" data-tooltip="Kỹ năng">
+                    <a ui-sref="app.about">
+                        <i class="material-icons">wifi</i>
+                    </a>
+                </li>
+                <li ui-sref-active='active' class="light-blue darken-2 waves-effect waves-light" tooltipped data-position="bottom" data-delay="50" data-tooltip="Dự án đã tham gia">
+                    <a ui-sref="app.contact">
+                        <i class="material-icons">dialpad</i>
+                    </a>
+                </li>
+                <li ui-sref-active='active' class="light-blue darken-1 waves-effect waves-light">
+                    <a ui-sref="app.help">
+                        <i class="material-icons">people</i>
+                    </a>
+                </li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+                <li ui-sref-active='active'><a class="waves-effect waves-blue" ui-sref="app.home">Trang chủ</a></li>
+                <li ui-sref-active='active'><a class="waves-effect waves-blue" ui-sref="app.about">Kỹ năng</a></li>
+                <li ui-sref-active='active'><a class="waves-effect waves-blue" ui-sref="app.contact">Dự án đã tham gia</a></li>
+                <li ui-sref-active='active'><a class="waves-effect waves-blue" ui-sref="app.help">Thông tin</a></li>
+            </ul>
+        </div>
+    </nav>
 </header>
-
 <script type="text/javascript">
-	// Initialize collapse button
-	$('.button-collapse').sideNav({
-		menuWidth: 300, // Default is 240
-		edge: 'right', // Choose the horizontal origin
-		closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
-	});	
+// Initialize collapse button
+$('.button-collapse').sideNav({
+    menuWidth: 300, // Default is 240
+    edge: 'right', // Choose the horizontal origin
+    closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+});
 </script>

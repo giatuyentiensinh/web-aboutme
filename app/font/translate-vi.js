@@ -8,7 +8,7 @@ var lang_vi = {
         IMAGE: {
             H1: 'Bình minh ở Đồ Sơn',
             H2: 'Liên hoan tân niên 2015',
-            H3: 'Bình minh ở Mộc Châu'
+            H3: 'Itbee team'
         },
         FRIEND: {
             TITLE: 'Bạn bè của tôi'
@@ -63,7 +63,7 @@ var lang_vi = {
             L4: 'Trung tâm tính toán hiệu năng cao'
         },
         COPYRIGHT: {
-        	TEXT: '© 2015 Copyright by Tuyenng',
+        	TEXT: '© 2016 Copyright by Tuyenng',
         	REF: 'giatuyentiensinh'
         }
     }
