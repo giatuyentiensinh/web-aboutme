@@ -14,8 +14,22 @@ angular.module('amApp')
             .preferredLanguage('es');
     })
     .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
-        $urlRouterProvider.otherwise('/app/home');
+        $urlRouterProvider.otherwise('/cv');
         $stateProvider
+            .state('cv', {
+                url: '/cv',
+                templateUrl: 'views/cv.html',
+                controller: function($window, $translate, $scope) {
+                    $window.document.title = 'Tuyen-ng site';
+                    $scope.changelang = function(lang) {
+                        if ('vn' === lang) {
+                            $translate.use('vn');
+                        } else if ('es' === lang) {
+                            $translate.use('es');
+                        }
+                    };
+                }
+            })
             .state('app', {
                 abstract: true,
                 url: '/app',
