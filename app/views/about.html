@@ -1,59 +1,306 @@
-<section class="row">
-	<div class="flow-text m-l">
-		<h1 class="pink-text text-darken-4" translate="SKILL"></h1>
-	</div>
-</section>
-
-
-<!-- <section class="row">
-	<ul class="dynamic-grid" angular-grid="pics" grid-width="300" gutter-size="10" angular-grid-id="gallery" refresh-on-img-load="false" >
-	    <li data-ng-repeat="pic in pics" class="grid hoverable" data-ng-clock>
-	        <img ng-src="{{pic.image}}" class="grid-img" data-actual-width = "{{pic.actualWidth}}"  data-actual-height="{{pic.actualHeight}}" />
-	        <a class="m flow-text teal-text text-accent-4" modal href="#{{$index}}-{{pic.name}}">{{pic.name}}</a>
-
-	        <div id="{{$index}}-{{pic.name}}" class="modal">
-	        	<div class="modal-content">
-	        		<h4>{{pic.name}}</h4>
-	        		<img ng-src="{{pic.image}}" class="responsive-img">
-	        	</div>
-        	    <div class="modal-footer">
-			        <a class="modal-action modal-close waves-effect waves-green btn-flat">Exit</a>
-    			</div>
-
-	        </div>
-	    </li>
-	</ul>
-</section> -->
-
+<div class="row">
+    <div class="flow-text m-l">
+        <h1 class="pink-text text-darken-4" translate="SKILL"></h1>
+    </div>
+</div>
 <ul class="flowGrid m" ng-flow-grid="homePageGrid" min-item-width="250">
-    <li class="flowGridItem hoverable" ng-repeat="pic in pics">
-        <img ng-src="{{pic.image}}"/>
-        <a class="flow-text teal-text text-accent-4 m" modal href="#{{$index}}-{{pic.name}}">{{pic.name}}</a>
-
-        <div id="{{$index}}-{{pic.name}}" class="modal">
-	    	<div class="modal-content">
-	    		<h4 class="yellow-text text-accent-4">{{pic.name}}</h4>
-	    		<img ng-src="{{pic.image}}" class="responsive-img">
-	    	</div>
-		    <div class="modal-footer">		    
-		        <a class="modal-action modal-close waves-effect waves-red btn-flat">Exit</a>
-			</div>
-
-	    </div>
+    <li class="flowGridItem hoverable">
+        <img ng-src="images/playframework.png" />
+        <a class="flow-text teal-text text-accent-4 m" modal href="#playframework">playframework</a>
+        <div id="playframework" class="modal">
+            <div class="modal-content">
+                <h4 class="yellow-text text-accent-4">playframework</h4>
+                <img ng-src="images/playframework.png" class="responsive-img">
+            </div>
+            <div class="modal-footer">
+                <a class="modal-action modal-close waves-effect waves-red btn-flat">Exit</a>
+            </div>
+        </div>
+    </li>
+    <li class="flowGridItem hoverable">
+        <img ng-src="images/mongodb.png" />
+        <a class="flow-text teal-text text-accent-4 m" modal href="#mongodb">mongodb</a>
+        <div id="mongodb" class="modal">
+            <div class="modal-content">
+                <h4 class="yellow-text text-accent-4">mongodb</h4>
+                <img ng-src="images/mongodb.png" class="responsive-img">
+            </div>
+            <div class="modal-footer">
+                <a class="modal-action modal-close waves-effect waves-red btn-flat">Exit</a>
+            </div>
+        </div>
+    </li>
+    <li class="flowGridItem hoverable">
+        <img ng-src="images/elasticsearch.png" />
+        <a class="flow-text teal-text text-accent-4 m" modal href="#elasticsearch">elasticsearch</a>
+        <div id="elasticsearch" class="modal">
+            <div class="modal-content">
+                <h4 class="yellow-text text-accent-4">elasticsearch</h4>
+                <img ng-src="images/elasticsearch.png" class="responsive-img">
+            </div>
+            <div class="modal-footer">
+                <a class="modal-action modal-close waves-effect waves-red btn-flat">Exit</a>
+            </div>
+        </div>
+    </li>
+    <li class="flowGridItem hoverable">
+        <img ng-src="images/cassandra.png" />
+        <a class="flow-text teal-text text-accent-4 m" modal href="#cassandra">Apache cassandra</a>
+        <div id="cassandra" class="modal">
+            <div class="modal-content">
+                <h4 class="yellow-text text-accent-4">Apache cassandra</h4>
+                <img ng-src="images/cassandra.png" class="responsive-img">
+            </div>
+            <div class="modal-footer">
+                <a class="modal-action modal-close waves-effect waves-red btn-flat">Exit</a>
+            </div>
+        </div>
+    </li>
+    <li class="flowGridItem hoverable">
+        <img ng-src="images/hadoop.png" />
+        <a class="flow-text teal-text text-accent-4 m" modal href="#hadoop">Apache Hadoop</a>
+        <div id="hadoop" class="modal">
+            <div class="modal-content">
+                <h4 class="yellow-text text-accent-4">Apache Hadoop</h4>
+                <img ng-src="images/hadoop.png" class="responsive-img">
+            </div>
+            <div class="modal-footer">
+                <a class="modal-action modal-close waves-effect waves-red btn-flat">Exit</a>
+            </div>
+        </div>
+    </li>
+    <li class="flowGridItem hoverable">
+        <img ng-src="images/spark.png" />
+        <a class="flow-text teal-text text-accent-4 m" modal href="#spark">Apache Spark</a>
+        <div id="spark" class="modal">
+            <div class="modal-content">
+                <h4 class="yellow-text text-accent-4">Apache Spark</h4>
+                <img ng-src="images/spark.png" class="responsive-img">
+            </div>
+            <div class="modal-footer">
+                <a class="modal-action modal-close waves-effect waves-red btn-flat">Exit</a>
+            </div>
+        </div>
+    </li>
+    <li class="flowGridItem hoverable">
+        <img ng-src="images/phoenix.png" />
+        <a class="flow-text teal-text text-accent-4 m" modal href="#phoenix">Apache Phoenix</a>
+        <div id="phoenix" class="modal">
+            <div class="modal-content">
+                <h4 class="yellow-text text-accent-4">Apache Phoenix</h4>
+                <img ng-src="images/phoenix.png" class="responsive-img">
+            </div>
+            <div class="modal-footer">
+                <a class="modal-action modal-close waves-effect waves-red btn-flat">Exit</a>
+            </div>
+        </div>
+    </li>
+    <li class="flowGridItem hoverable">
+        <img ng-src="images/docker.png" />
+        <a class="flow-text teal-text text-accent-4 m" modal href="#docker">docker</a>
+        <div id="docker" class="modal">
+            <div class="modal-content">
+                <h4 class="yellow-text text-accent-4">docker</h4>
+                <img ng-src="images/docker.png" class="responsive-img">
+            </div>
+            <div class="modal-footer">
+                <a class="modal-action modal-close waves-effect waves-red btn-flat">Exit</a>
+            </div>
+        </div>
+    </li>
+    <li class="flowGridItem hoverable">
+        <img ng-src="images/mysql.png" />
+        <a class="flow-text teal-text text-accent-4 m" modal href="#mysql">mysql</a>
+        <div id="mysql" class="modal">
+            <div class="modal-content">
+                <h4 class="yellow-text text-accent-4">mysql</h4>
+                <img ng-src="images/mysql.png" class="responsive-img">
+            </div>
+            <div class="modal-footer">
+                <a class="modal-action modal-close waves-effect waves-red btn-flat">Exit</a>
+            </div>
+        </div>
+    </li>
+    <li class="flowGridItem hoverable">
+        <img ng-src="images/materialize.png" />
+        <a class="flow-text teal-text text-accent-4 m" modal href="#materialize">materialize</a>
+        <div id="materialize" class="modal">
+            <div class="modal-content">
+                <h4 class="yellow-text text-accent-4">materialize</h4>
+                <img ng-src="images/materialize.png" class="responsive-img">
+            </div>
+            <div class="modal-footer">
+                <a class="modal-action modal-close waves-effect waves-red btn-flat">Exit</a>
+            </div>
+        </div>
+    </li>
+    <li class="flowGridItem hoverable">
+        <img ng-src="images/bootstrap.png" />
+        <a class="flow-text teal-text text-accent-4 m" modal href="#bootstrap">bootstrap</a>
+        <div id="bootstrap" class="modal">
+            <div class="modal-content">
+                <h4 class="yellow-text text-accent-4">bootstrap</h4>
+                <img ng-src="images/bootstrap.png" class="responsive-img">
+            </div>
+            <div class="modal-footer">
+                <a class="modal-action modal-close waves-effect waves-red btn-flat">Exit</a>
+            </div>
+        </div>
+    </li>
+    <li class="flowGridItem hoverable">
+        <img ng-src="images/rabbitmq.png" />
+        <a class="flow-text teal-text text-accent-4 m" modal href="#rabbitmq">rabbitmq</a>
+        <div id="rabbitmq" class="modal">
+            <div class="modal-content">
+                <h4 class="yellow-text text-accent-4">rabbitmq</h4>
+                <img ng-src="images/rabbitmq.png" class="responsive-img">
+            </div>
+            <div class="modal-footer">
+                <a class="modal-action modal-close waves-effect waves-red btn-flat">Exit</a>
+            </div>
+        </div>
+    </li>
+    <li class="flowGridItem hoverable">
+        <img ng-src="images/angularjs.png" />
+        <a class="flow-text teal-text text-accent-4 m" modal href="#angularjs">angularjs</a>
+        <div id="angularjs" class="modal">
+            <div class="modal-content">
+                <h4 class="yellow-text text-accent-4">angularjs</h4>
+                <img ng-src="images/angularjs.png" class="responsive-img">
+            </div>
+            <div class="modal-footer">
+                <a class="modal-action modal-close waves-effect waves-red btn-flat">Exit</a>
+            </div>
+        </div>
+    </li>
+    <li class="flowGridItem hoverable">
+        <img ng-src="images/nodejs.png" />
+        <a class="flow-text teal-text text-accent-4 m" modal href="#nodejs">nodejs</a>
+        <div id="nodejs" class="modal">
+            <div class="modal-content">
+                <h4 class="yellow-text text-accent-4">nodejs</h4>
+                <img ng-src="images/nodejs.png" class="responsive-img">
+            </div>
+            <div class="modal-footer">
+                <a class="modal-action modal-close waves-effect waves-red btn-flat">Exit</a>
+            </div>
+        </div>
+    </li>
+    <li class="flowGridItem hoverable">
+        <img ng-src="images/titan.png" />
+        <a class="flow-text teal-text text-accent-4 m" modal href="#titan">titan</a>
+        <div id="titan" class="modal">
+            <div class="modal-content">
+                <h4 class="yellow-text text-accent-4">titan</h4>
+                <img ng-src="images/titan.png" class="responsive-img">
+            </div>
+            <div class="modal-footer">
+                <a class="modal-action modal-close waves-effect waves-red btn-flat">Exit</a>
+            </div>
+        </div>
+    </li>
+    <li class="flowGridItem hoverable">
+        <img ng-src="images/tinkerpop.png" />
+        <a class="flow-text teal-text text-accent-4 m" modal href="#tinkerpop">tinkerpop</a>
+        <div id="tinkerpop" class="modal">
+            <div class="modal-content">
+                <h4 class="yellow-text text-accent-4">tinkerpop</h4>
+                <img ng-src="images/tinkerpop.png" class="responsive-img">
+            </div>
+            <div class="modal-footer">
+                <a class="modal-action modal-close waves-effect waves-red btn-flat">Exit</a>
+            </div>
+        </div>
+    </li>
+    <li class="flowGridItem hoverable">
+        <img ng-src="images/neo4j.png" />
+        <a class="flow-text teal-text text-accent-4 m" modal href="#neo4j">neo4j</a>
+        <div id="neo4j" class="modal">
+            <div class="modal-content">
+                <h4 class="yellow-text text-accent-4">neo4j</h4>
+                <img ng-src="images/neo4j.png" class="responsive-img">
+            </div>
+            <div class="modal-footer">
+                <a class="modal-action modal-close waves-effect waves-red btn-flat">Exit</a>
+            </div>
+        </div>
+    </li>
+    <li class="flowGridItem hoverable">
+        <img ng-src="images/yeoman.png" />
+        <a class="flow-text teal-text text-accent-4 m" modal href="#yeoman">yeoman</a>
+        <div id="yeoman" class="modal">
+            <div class="modal-content">
+                <h4 class="yellow-text text-accent-4">yeoman</h4>
+                <img ng-src="images/yeoman.png" class="responsive-img">
+            </div>
+            <div class="modal-footer">
+                <a class="modal-action modal-close waves-effect waves-red btn-flat">Exit</a>
+            </div>
+        </div>
+    </li>
+    <li class="flowGridItem hoverable">
+        <img ng-src="images/grunt.png" />
+        <a class="flow-text teal-text text-accent-4 m" modal href="#grunt">grunt</a>
+        <div id="grunt" class="modal">
+            <div class="modal-content">
+                <h4 class="yellow-text text-accent-4">grunt</h4>
+                <img ng-src="images/grunt.png" class="responsive-img">
+            </div>
+            <div class="modal-footer">
+                <a class="modal-action modal-close waves-effect waves-red btn-flat">Exit</a>
+            </div>
+        </div>
+    </li>
+    <li class="flowGridItem hoverable">
+        <img ng-src="images/bower.png" />
+        <a class="flow-text teal-text text-accent-4 m" modal href="#bower">bower</a>
+        <div id="bower" class="modal">
+            <div class="modal-content">
+                <h4 class="yellow-text text-accent-4">bower</h4>
+                <img ng-src="images/bower.png" class="responsive-img">
+            </div>
+            <div class="modal-footer">
+                <a class="modal-action modal-close waves-effect waves-red btn-flat">Exit</a>
+            </div>
+        </div>
+    </li>
+    <li class="flowGridItem hoverable">
+        <img ng-src="images/Linux.png" />
+        <a class="flow-text teal-text text-accent-4 m" modal href="#linux">linux</a>
+        <div id="linux" class="modal">
+            <div class="modal-content">
+                <h4 class="yellow-text text-accent-4">linux</h4>
+                <img ng-src="images/Linux.png" class="responsive-img">
+            </div>
+            <div class="modal-footer">
+                <a class="modal-action modal-close waves-effect waves-red btn-flat">Exit</a>
+            </div>
+        </div>
+    </li>
+    <li class="flowGridItem hoverable">
+        <img ng-src="images/java.png" />
+        <a class="flow-text teal-text text-accent-4 m" modal href="#java">java</a>
+        <div id="java" class="modal">
+            <div class="modal-content">
+                <h4 class="yellow-text text-accent-4">java</h4>
+                <img ng-src="images/java.png" class="responsive-img">
+            </div>
+            <div class="modal-footer">
+                <a class="modal-action modal-close waves-effect waves-red btn-flat">Exit</a>
+            </div>
+        </div>
+    </li>
+    <li class="flowGridItem hoverable">
+        <img ng-src="images/maven.png" />
+        <a class="flow-text teal-text text-accent-4 m" modal href="#maven">maven</a>
+        <div id="maven" class="modal">
+            <div class="modal-content">
+                <h4 class="yellow-text text-accent-4">maven</h4>
+                <img ng-src="images/maven.png" class="responsive-img">
+            </div>
+            <div class="modal-footer">
+                <a class="modal-action modal-close waves-effect waves-red btn-flat">Exit</a>
+            </div>
+        </div>
     </li>
 </ul>
-
-<!-- 
-<div class="card">
-	<div class="card-image waves-effect waves-block waves-light">
-		<img class="activator" src="images/WP_20150118_001.jpg">
-	</div>
-	<div class="card-content">
-		<span class="card-title activator grey-text text-darken-4">Mộc Châu<i class="material-icons right">Đọc thêm</i></span>
-		<p><a href="#">Link liên kết</a></p>
-	</div>
-	<div class="card-reveal">
-		<span class="card-title grey-text text-darken-4">Mộc Châu<i class="material-icons right" close>Đóng</i></span>
-		<p>Buổi sáng ngày 18/01/2015 ở Mộc Châu</p>
-	</div>
-</div> -->

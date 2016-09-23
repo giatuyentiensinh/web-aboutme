@@ -58,7 +58,7 @@ var lang_vi = {
         LINK: {
             TITLE: 'Liên kết',
             L1: 'Đại học Bách Khoa Hà Nội',
-            L2: 'Việt công nghệ thông tin và truyền thông',
+            L2: 'Viện công nghệ thông tin và truyền thông',
             L3: 'Khoa Truyền thông và mạng máy tính',
             L4: 'Trung tâm tính toán hiệu năng cao'
         },
