@@ -12,10 +12,10 @@ nav ul a {
 <header class="navbar-fixed">
     <nav class="white">
         <div>
-            <a href="#slide" class="brand-logo waves-effect waves-light m-l-xl"><strong>Tuyen-ng</strong></a>
+            <a href="#slide" class="brand-logo waves-effect waves m-l-xl"><strong>Tuyen-ng</strong></a>
             <!-- activate side-bav in mobile view -->
             <a href="#" data-activates="mobile-demo" class="button-collapse black-text">
-                <i class="material-icons">reorder</i>
+                <i class="material-icons">menu</i>
             </a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="#slide">HOME</a></li>
@@ -26,10 +26,10 @@ nav ul a {
             </ul>
             <!-- navbar for mobile -->
             <ul class="side-nav" id="mobile-demo">
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#experience">EXPERIENCE</a></li>
-                <li><a href="#work">PROJECT</a></li>
-                <li><a href="#contact">CONTACT</a></li>
+                <li><a class="waves-effect waves-green" href="#about">ABOUT</a></li>
+                <li><a class="waves-effect waves-green" href="#experience">EXPERIENCE</a></li>
+                <li><a class="waves-effect waves-green" href="#work">PROJECT</a></li>
+                <li><a class="waves-effect waves-green" href="#contact">CONTACT</a></li>
             </ul>
         </div>
     </nav>
@@ -45,27 +45,32 @@ nav ul a {
                 <a ui-sref="app.home" class="text-name">Tuyen</a>
                 <h4><a href="http://hust.edu.vn" class="grey-text text-lighten-1">HUST Engineering</a></h4>
                 <div class="hide-on-small-only">
-                    <a class="btn-floating waves-effect waves-light white center-align button-icon" href="https://www.facebook.com/javaoriami">
+                    <!-- <a class="btn-floating waves-effect waves white center-align button-icon" href="https://www.facebook.com/javaoriami" tooltipped data-position="bottom" data-delay="50" data-tooltip="Facebook"> -->
+                    <a class="btn-floating waves-effect waves white center-align button-icon" href="https://www.facebook.com/javaoriami">
                         <svg style="width:24px;height:24px;" viewBox="0 0 24 24">
                             <path fill="#000000" d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z" />
                         </svg>
                     </a>
-                    <a class="btn-floating waves-effect waves-light white center-align button-icon" href="https://plus.google.com/117976078610191841927">
+                    <!-- <a class="btn-floating waves-effect waves white center-align button-icon" href="https://plus.google.com/117976078610191841927" tooltipped data-position="bottom" data-delay="50" data-tooltip="Google +"> -->
+                    <a class="btn-floating waves-effect waves white center-align button-icon" href="https://plus.google.com/117976078610191841927">
                         <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                             <path fill="#000000" d="M23,11H21V9H19V11H17V13H19V15H21V13H23M8,11V13.4H12C11.8,14.4 10.8,16.4 8,16.4C5.6,16.4 3.7,14.4 3.7,12C3.7,9.6 5.6,7.6 8,7.6C9.4,7.6 10.3,8.2 10.8,8.7L12.7,6.9C11.5,5.7 9.9,5 8,5C4.1,5 1,8.1 1,12C1,15.9 4.1,19 8,19C12,19 14.7,16.2 14.7,12.2C14.7,11.7 14.7,11.4 14.6,11H8Z" />
                         </svg>
                     </a>
-                    <a class="btn-floating waves-effect waves-light white center-align button-icon">
+                    <!-- <a class="btn-floating waves-effect waves white center-align button-icon" tooltipped data-position="bottom" data-delay="50" data-tooltip="Linkedin"> -->
+                    <a class="btn-floating waves-effect waves white center-align button-icon">
                         <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                             <path fill="#000000" d="M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z" />
                         </svg>
                     </a>
-                    <a class="btn-floating waves-effect waves-light white center-align button-icon">
+                    <!-- <a class="btn-floating waves-effect waves white center-align button-icon" tooltipped data-position="bottom" data-delay="50" data-tooltip="Twitter"> -->
+                    <a class="btn-floating waves-effect waves white center-align button-icon">
                         <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                             <path fill="#000000" d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z" />
                         </svg>
                     </a>
-                    <a class="btn-floating waves-effect waves-light white center-align button-icon">
+                    <!-- <a class="btn-floating waves-effect waves white center-align button-icon" tooltipped data-position="bottom" data-delay="50" data-tooltip="Pinterest"> -->
+                    <a class="btn-floating waves-effect waves white center-align button-icon">
                         <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                             <path fill="#000000" d="M13.25,17.25C12.25,17.25 11.29,16.82 10.6,16.1L9.41,20.1L9.33,20.36L9.29,20.34C9.04,20.75 8.61,21 8.12,21C7.37,21 6.75,20.38 6.75,19.62C6.75,19.56 6.76,19.5 6.77,19.44L6.75,19.43L6.81,19.21L9.12,12.26C9.12,12.26 8.87,11.5 8.87,10.42C8.87,8.27 10.03,7.62 10.95,7.62C11.88,7.62 12.73,7.95 12.73,9.26C12.73,10.94 11.61,11.8 11.61,13C11.61,13.94 12.37,14.69 13.29,14.69C16.21,14.69 17.25,12.5 17.25,10.44C17.25,7.71 14.89,5.5 12,5.5C9.1,5.5 6.75,7.71 6.75,10.44C6.75,11.28 7,12.12 7.43,12.85C7.54,13.05 7.6,13.27 7.6,13.5A1.25,1.25 0 0,1 6.35,14.75C5.91,14.75 5.5,14.5 5.27,14.13C4.6,13 4.25,11.73 4.25,10.44C4.25,6.33 7.73,3 12,3C16.27,3 19.75,6.33 19.75,10.44C19.75,13.72 17.71,17.25 13.25,17.25Z" />
                         </svg>
@@ -100,7 +105,8 @@ nav ul a {
                 <p>I'm 22 years old, My hometown in Viet Nam</p>
                 <p>I'm have been practice social network, web server and data analysis with my team for many year. I always want to use my skills to build big project.</p>
                 <p class="divider"></p>
-                <h2 ui-sref="app.about">My skill</h2>
+                <a ui-sref="app.about" class="right btn-floating deep-purple lighten-3 waves-effect waves-blue" tooltipped data-position="bottom" data-delay="50" data-tooltip="READ MORE"><i class="material-icons">info</i></a>
+                <h3>My skill</h3>
                 <div>
                     <h5>
                         Presentation
@@ -139,19 +145,14 @@ nav ul a {
         <div class="row">
             <div class="col s12 m3">
                 <img src="images/playframework.png" class="responsive-img" />
-                <h5>Play framework</h5>
-                <h6>High velocity web framework</h6>
                 <p>Play Framework is a web development framework with Scala and Java APIs that empowers developers to build applications with an ease unparalleled on the JVM.</p>
             </div>
             <div class="col s12 m3">
                 <img src="images/spark.png" class="responsive-img" />
-                <h5>Spark</h5>
-                <h6>Lightning-fast, distributed compute engine</h6>
                 <p>Apache Spark is a lightning-fast, distributed compute engine for processing large, streaming datasets.</p>
             </div>
             <div class="col s12 m3">
                 <img src="images/mysql.png" class="responsive-img" />
-                <h5>MySQL, MariaDB</h5>
                 <p>MySQL is the world's most popular open source database. Whether you are a fast growing web property, technology ISV or large enterprise, MySQL can cost-effectively help you deliver high performance, scalable database applications.</p>
             </div>
             <div class="col s12 m3">
@@ -166,7 +167,6 @@ nav ul a {
 <section id="work" class="scrollspy">
     <div class="container">
         <h2>Project</h2>
-        <p>Last project</p>
         <div class="row">
             <div class="col s12 m4">
                 <div class="card">
@@ -213,11 +213,11 @@ nav ul a {
 <!-- /Work -->
 <!-- /content-->
 <!-- footer -->
-<footer id="contact" class="page-footer blue-grey lighten-5 scrollspy">
+<footer id="contact" class="page-footer deep-purple lighten-5 scrollspy">
     <div class="container">
         <div class="row">
             <div class="col l6 s12">
-                <h5 class="black-text">Contact me</h5>
+                <h5 class="black-text"><strong>Contact me</strong></h5>
                 <p class="grey-text text-darken-4">You can contact me via email or the phone</p>
             </div>
             <div class="col l4 offset-l2 s12">
@@ -233,7 +233,7 @@ nav ul a {
     </div>
     <div class="footer-copyright">
         <div class="container black-text">
-            © 2016 Copyright by Tuyenng
+            Copyright © 2016 by Tuyenng
             <a class="grey-text text-darken-4 right">Tuyen's site</a>
         </div>
     </div>
