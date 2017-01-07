@@ -1,0 +1,62 @@
+{
+    "HOME": {
+        "NAME": "Nguyễn Gia Tuyến",
+        "SLOGAN": "Toán học xác xuất sẽ không bao giờ nói chính xác",
+        "IMAGE": {
+            "H1": "Bình minh ở Đồ Sơn",
+            "H2": "Liên hoan tân niên 2015",
+            "H3": "Itbee team"
+        },
+        "FRIEND": {
+            "TITLE": "Bạn bè của tôi"
+        },
+        "MYSTUDENTED": "Ảnh lúc sinh viên"
+    },
+    "SKILL": "Kỹ năng",
+    "FRIEND": {
+        "DETAIL": "Chi tiết",
+        "NOTUPDATE": "Chưa update",
+        "F1": {
+            "FIRST_NAME": "Bùi",
+            "LAST_NAME": "Tuấn Ánh",
+            "DESCRIPTION": "Mặt babe trông rất cute"
+        },
+        "F2": {
+            "FIRST_NAME": "Nguyễn",
+            "LAST_NAME": "Đình Phúc",
+            "DESCRIPTION": "Thiên sứ thằn lằn"
+        },
+        "F3": {
+            "FIRST_NAME": "Nguyễn",
+            "LAST_NAME": "Gia Tuyến",
+            "DESCRIPTION": "NoID"
+        },
+        "F4": {
+            "FIRST_NAME": "Lê Thị",
+            "LAST_NAME": "Kim Anh",
+            "DESCRIPTION": "Thích con trai không ***"
+        },
+        "F5": {
+            "FIRST_NAME": "Đoàn",
+            "LAST_NAME": "Anh Tuấn",
+            "DESCRIPTION": "?"
+        }
+    },
+    "FOOTER": {
+        "CONTENT": {
+            "AUTH": "Tác giả",
+            "NAME": "Tuyen-ng"
+        },
+        "LINK": {
+            "TITLE": "Liên kết",
+            "L1": "Đại học Bách Khoa Hà Nội",
+            "L2": "Viện công nghệ thông tin và truyền thông",
+            "L3": "Khoa Truyền thông và mạng máy tính",
+            "L4": "Trung tâm tính toán hiệu năng cao"
+        },
+        "COPYRIGHT": {
+            "TEXT": "© 2017 Copyright by Tuyenng",
+            "REF": "giatuyentiensinh"
+        }
+    }
+}
