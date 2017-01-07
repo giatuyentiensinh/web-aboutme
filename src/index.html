@@ -1,110 +1,133 @@
 <!doctype html>
-<html>
+<html lang="vi" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
 
 <head>
-  <meta charset="utf-8">
-  <title>WebAboutme</title>
-  <base href="/">
+    <meta charset="utf-8">
+    <title>Tuyen-ng</title>
+    <base href="/">
+    <meta name="description" content="Trang web của Tuyến">
+    <link rel="image_src" href="assets/images/WP_20150621_07_55_14_Pro.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style type="text/css">
+        .loader {
+            position: relative;
+            padding-top: 100px;
+            width: 40px;
+            margin: auto;
+        }
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <style type="text/css">
-    .loader {
-      position: relative;
-      padding-top: 100px;
-      width: 40px;
-      margin: auto;
-    }
+        .loader .circle {
+            position: absolute;
+            width: 76px;
+            height: 76px;
+            opacity: 0;
+            transform: rotate(225deg);
+            animation-iteration-count: infinite;
+            animation-name: orbit;
+            animation-duration: 5.5s;
+        }
 
-    .loader .circle {
-      position: absolute;
-      width: 38px;
-      height: 38px;
-      opacity: 0;
-      transform: rotate(225deg);
-      animation-iteration-count: infinite;
-      animation-name: orbit;
-      animation-duration: 5.5s;
-    }
+        .loader .circle:after {
+            content: '';
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            border-radius: 12px;
+            background: #00ff00;
+            /* Pick a color */
+        }
 
-    .loader .circle:after {
-      content: '';
-      position: absolute;
-      width: 5px;
-      height: 5px;
-      border-radius: 5px;
-      background: #00ff00;
-      /* Pick a color */
-    }
+        .loader .circle:nth-child(2) {
+            animation-delay: 240ms;
+        }
 
-    .loader .circle:nth-child(2) {
-      animation-delay: 240ms;
-    }
+        .loader .circle:nth-child(3) {
+            animation-delay: 480ms;
+        }
 
-    .loader .circle:nth-child(3) {
-      animation-delay: 480ms;
-    }
+        .loader .circle:nth-child(4) {
+            animation-delay: 720ms;
+        }
 
-    .loader .circle:nth-child(4) {
-      animation-delay: 720ms;
-    }
+        .loader .circle:nth-child(5) {
+            animation-delay: 960ms;
+        }
 
-    .loader .circle:nth-child(5) {
-      animation-delay: 960ms;
-    }
+        @keyframes orbit {
+            0% {
+                transform: rotate(225deg);
+                opacity: 1;
+                animation-timing-function: ease-out;
+            }
+            7% {
+                transform: rotate(345deg);
+                animation-timing-function: linear;
+            }
+            30% {
+                transform: rotate(455deg);
+                animation-timing-function: ease-in-out;
+            }
+            39% {
+                transform: rotate(690deg);
+                animation-timing-function: linear;
+            }
+            70% {
+                transform: rotate(815deg);
+                opacity: 1;
+                animation-timing-function: ease-out;
+            }
+            75% {
+                transform: rotate(945deg);
+                animation-timing-function: ease-out;
+            }
+            76% {
+                transform: rotate(945deg);
+                opacity: 0;
+            }
+            100% {
+                transform: rotate(945deg);
+                opacity: 0;
+            }
+        }
 
-    @keyframes orbit {
-      0% {
-        transform: rotate(225deg);
-        opacity: 1;
-        animation-timing-function: ease-out;
-      }
-      7% {
-        transform: rotate(345deg);
-        animation-timing-function: linear;
-      }
-      30% {
-        transform: rotate(455deg);
-        animation-timing-function: ease-in-out;
-      }
-      39% {
-        transform: rotate(690deg);
-        animation-timing-function: linear;
-      }
-      70% {
-        transform: rotate(815deg);
-        opacity: 1;
-        animation-timing-function: ease-out;
-      }
-      75% {
-        transform: rotate(945deg);
-        animation-timing-function: ease-out;
-      }
-      76% {
-        transform: rotate(945deg);
-        opacity: 0;
-      }
-      100% {
-        transform: rotate(945deg);
-        opacity: 0;
-      }
-    }
-  </style>
-
+        .text-slogan {
+            font-size: 20px;
+            text-align: center;
+            padding-top: 50px;
+        }
+    </style>
 </head>
 
 <body>
-  <app-root>
-    <div class='loader'>
-      <div class='circle'></div>
-      <div class='circle'></div>
-      <div class='circle'></div>
-      <div class='circle'></div>
-      <div class='circle'></div>
-    </div>
-  </app-root>
-  <!-- <app-layout>Loading...</app-layout> -->
+    <app-root>
+        <div class="text-slogan">
+            Kẹo thì ngọt. Len thì rối. Nước khó nắm bắt...
+            <p>Nhưng tất cả rồi sẽ ổn thôi</p>
+            <strong id="time"></strong>
+            <script type="text/javascript">
+                document.getElementById('time').append(new Date());
+            </script>
+        </div>
+        <div class='loader'>
+            <div class='circle'></div>
+            <div class='circle'></div>
+            <div class='circle'></div>
+            <div class='circle'></div>
+            <div class='circle'></div>
+        </div>
+    </app-root>
 </body>
+<script>
+    ! function(A, n, g, u, l, a, r) {
+        A.GoogleAnalyticsObject = l, A[l] = A[l] || function() {
+                (A[l].q = A[l].q || []).push(arguments)
+            }, A[l].l = +new Date, a = n.createElement(g),
+            r = n.getElementsByTagName(g)[0], a.src = u, r.parentNode.insertBefore(a, r)
+    }(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-76196724-1', 'auto');
+    ga('send', 'pageview', 'index.html');
+</script>
 
 </html>
