@@ -29,6 +29,10 @@ const routes: Routes = [
   }
 ];
 
+export function createTranslateLoader(http: Http) {
+    return new TranslateStaticLoader(http, './assets/i18n', '.json');
+}
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,7 +51,7 @@ const routes: Routes = [
     NgGridModule,
     TranslateModule.forRoot({
       provide: TranslateLoader,
-            useFactory: (http: Http) => new TranslateStaticLoader(http, '/assets/i18n', '.json'),
+            useFactory: (createTranslateLoader),
             deps: [Http]
     }),
     RouterModule.forRoot(routes)
