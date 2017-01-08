@@ -11,92 +11,96 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <style type="text/css">
-        .loader {
-            position: relative;
-            padding-top: 100px;
-            width: 40px;
-            margin: auto;
-        }
-
-        .loader .circle {
-            position: absolute;
-            width: 76px;
-            height: 76px;
-            opacity: 0;
+    .loader {
+        position: relative;
+        padding-top: 100px;
+        width: 40px;
+        margin: auto;
+    }
+    
+    .loader .circle {
+        position: absolute;
+        width: 76px;
+        height: 76px;
+        opacity: 0;
+        transform: rotate(225deg);
+        animation-iteration-count: infinite;
+        animation-name: orbit;
+        animation-duration: 5.5s;
+    }
+    
+    .loader .circle:after {
+        content: '';
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        border-radius: 12px;
+        /*background: linear-gradient(white, red, blue, green);*/
+        /*background: repeating-radial-gradient(red, yellow 10%, green 15%);*/
+        /*background: radial-gradient(circle, red, yellow, green);*/
+        /*background: linear-gradient(to right, #10ef62 , #0014ff);*/
+        background: linear-gradient(to right, rgba(121, 7, 116, 0.62), #FF9800);
+        /* Pick a color */
+    }
+    
+    .loader .circle:nth-child(2) {
+        animation-delay: 240ms;
+    }
+    
+    .loader .circle:nth-child(3) {
+        animation-delay: 480ms;
+    }
+    
+    .loader .circle:nth-child(4) {
+        animation-delay: 720ms;
+    }
+    
+    .loader .circle:nth-child(5) {
+        animation-delay: 960ms;
+    }
+    
+    @keyframes orbit {
+        0% {
             transform: rotate(225deg);
-            animation-iteration-count: infinite;
-            animation-name: orbit;
-            animation-duration: 5.5s;
+            opacity: 1;
+            animation-timing-function: ease-out;
         }
-
-        .loader .circle:after {
-            content: '';
-            position: absolute;
-            width: 12px;
-            height: 12px;
-            border-radius: 12px;
-            background: linear-gradient(to right, #10ef62 , #0014ff);
-            /* Pick a color */
+        7% {
+            transform: rotate(345deg);
+            animation-timing-function: linear;
         }
-
-        .loader .circle:nth-child(2) {
-            animation-delay: 240ms;
+        30% {
+            transform: rotate(455deg);
+            animation-timing-function: ease-in-out;
         }
-
-        .loader .circle:nth-child(3) {
-            animation-delay: 480ms;
+        39% {
+            transform: rotate(690deg);
+            animation-timing-function: linear;
         }
-
-        .loader .circle:nth-child(4) {
-            animation-delay: 720ms;
+        70% {
+            transform: rotate(815deg);
+            opacity: 1;
+            animation-timing-function: ease-out;
         }
-
-        .loader .circle:nth-child(5) {
-            animation-delay: 960ms;
+        75% {
+            transform: rotate(945deg);
+            animation-timing-function: ease-out;
         }
-
-        @keyframes orbit {
-            0% {
-                transform: rotate(225deg);
-                opacity: 1;
-                animation-timing-function: ease-out;
-            }
-            7% {
-                transform: rotate(345deg);
-                animation-timing-function: linear;
-            }
-            30% {
-                transform: rotate(455deg);
-                animation-timing-function: ease-in-out;
-            }
-            39% {
-                transform: rotate(690deg);
-                animation-timing-function: linear;
-            }
-            70% {
-                transform: rotate(815deg);
-                opacity: 1;
-                animation-timing-function: ease-out;
-            }
-            75% {
-                transform: rotate(945deg);
-                animation-timing-function: ease-out;
-            }
-            76% {
-                transform: rotate(945deg);
-                opacity: 0;
-            }
-            100% {
-                transform: rotate(945deg);
-                opacity: 0;
-            }
+        76% {
+            transform: rotate(945deg);
+            opacity: 0;
         }
-
-        .text-slogan {
-            font-size: 20px;
-            text-align: center;
-            padding-top: 50px;
+        100% {
+            transform: rotate(945deg);
+            opacity: 0;
         }
+    }
+    
+    .text-slogan {
+        font-size: 20px;
+        text-align: center;
+        padding-top: 50px;
+    }
     </style>
 </head>
 
@@ -107,7 +111,7 @@
             <p>Nhưng tất cả rồi sẽ ổn thôi</p>
             <strong id="time"></strong>
             <script type="text/javascript">
-                document.getElementById('time').append(new Date());
+            document.getElementById('time').innerHTML = new Date();
             </script>
         </div>
         <div class='loader'>
@@ -120,14 +124,14 @@
     </app-root>
 </body>
 <script>
-    ! function(A, n, g, u, l, a, r) {
-        A.GoogleAnalyticsObject = l, A[l] = A[l] || function() {
-                (A[l].q = A[l].q || []).push(arguments)
-            }, A[l].l = +new Date, a = n.createElement(g),
-            r = n.getElementsByTagName(g)[0], a.src = u, r.parentNode.insertBefore(a, r)
-    }(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-    ga('create', 'UA-76196724-1', 'auto');
-    ga('send', 'pageview', 'index.html');
+! function(A, n, g, u, l, a, r) {
+    A.GoogleAnalyticsObject = l, A[l] = A[l] || function() {
+            (A[l].q = A[l].q || []).push(arguments)
+        }, A[l].l = +new Date, a = n.createElement(g),
+        r = n.getElementsByTagName(g)[0], a.src = u, r.parentNode.insertBefore(a, r)
+}(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+ga('create', 'UA-76196724-1', 'auto');
+ga('send', 'pageview', 'index.html');
 </script>
 
 </html>
