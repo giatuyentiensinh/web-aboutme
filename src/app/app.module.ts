@@ -5,6 +5,7 @@ import { HttpModule, Http } from '@angular/http';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { MaterializeModule } from 'angular2-materialize';
+import { AngularFireModule } from 'angularfire2';
 import { TranslateModule, TranslateLoader, TranslateStaticLoader } from 'ng2-translate';
 import { NgGridModule } from 'angular2-grid';
 import { AppComponent } from './app.component';
@@ -14,6 +15,7 @@ import { SkillComponent } from './skill/skill.component';
 import { ProjectComponent } from './project/project.component';
 import { FriendComponent } from './friend/friend.component';
 import { CvComponent } from './cv/cv.component';
+import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/cv', pathMatch: 'full' },
@@ -29,6 +31,14 @@ const routes: Routes = [
   }
 ];
 
+export const firebaseConfig = {
+  apiKey: 'AIzaSyAYJ1r9qkbwCwXsPVmdU24HXJPu8YujGtM',
+  authDomain: 'web-aboutme.firebaseapp.com',
+  databaseURL: 'https://web-aboutme.firebaseio.com',
+  storageBucket: "web-aboutme.appspot.com",
+  messagingSenderId: "695374920782"
+};
+
 export function createTranslateLoader(http: Http) {
     return new TranslateStaticLoader(http, './assets/i18n', '.json');
 }
@@ -42,6 +52,7 @@ export function createTranslateLoader(http: Http) {
     ProjectComponent,
     FriendComponent,
     CvComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
@@ -54,6 +65,7 @@ export function createTranslateLoader(http: Http) {
             useFactory: (createTranslateLoader),
             deps: [Http]
     }),
+    AngularFireModule.initializeApp(firebaseConfig),
     RouterModule.forRoot(routes)
   ],
   providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],

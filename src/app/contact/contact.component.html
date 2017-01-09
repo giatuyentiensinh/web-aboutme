@@ -1,0 +1,85 @@
+<div class="row">
+    <form class="col s12" (ngSubmit)="onSubmit()" #form="ngForm">
+        <!-- <legend class="blue-text text-darken-4">
+            <h4>Give me a message</h4>
+        </legend> -->
+        <div class="row">
+            <div class="input-field col s6 light-blue-text">
+                <input id="name" type="text" class="validate" name="name" [(ngModel)]="name" #nameV="ngModel" required />
+                <label for="name">Name</label>
+                <div [hidden]="nameV.valid || nameV.pristine" class="red-text">
+                    Tên không được bỏ trống
+                </div>
+            </div>
+            <div class="input-field col s6 light-blue-text">
+                <input id="email" type="email" class="validate" name="email" [(ngModel)]="email" #emailV="ngModel" required />
+                <label for="email">Email</label>
+                <div [hidden]="emailV.valid || emailV.pristine" class="red-text">
+                    Email không được bỏ trống
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12 light-blue-text">
+                <textarea id="message" class="materialize-textarea" name="message" [(ngModel)]="message" #messageV="ngModel" required></textarea>
+                <label for="message">Your message</label>
+                <div [hidden]="messageV.valid || messageV.pristine" class="red-text">
+                    Thông điệp không được bỏ trống
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s6">
+                <button type="submit" class="btn light-blue darken-4" [disabled]="!form.form.valid">Send</button>
+            </div>
+            <div class="col s6" *ngIf="!checkLoading">
+                <div class="preloader-wrapper big active">
+                    <div class="spinner-layer spinner-blue">
+                        <div class="circle-clipper left">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="gap-patch">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="circle-clipper right">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                    <div class="spinner-layer spinner-red">
+                        <div class="circle-clipper left">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="gap-patch">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="circle-clipper right">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                    <div class="spinner-layer spinner-yellow">
+                        <div class="circle-clipper left">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="gap-patch">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="circle-clipper right">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                    <div class="spinner-layer spinner-green">
+                        <div class="circle-clipper left">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="gap-patch">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="circle-clipper right">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
