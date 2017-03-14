@@ -1,0 +1,67 @@
+<header class="navbar-fixed">
+    <nav class="white">
+        <div>
+            <a class="brand-logo waves-effect waves m-l-xl" routerLink="/cv" routerLinkActive="active"><strong class="purple-text text-darken-4">HOME</strong></a>
+            <!-- activate side-bav in mobile view -->
+            <a href="#" data-activates="mobile-demo" class="button-collapse black-text" materialize="sideNav" [materializeParams]="[{menuWidth: 300, edge: 'left', closeOnClick: true, draggable: true}]">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="/assets/pdf/my-cv.pdf" target="_blank" class="waves-effect waves purple-text text-darken-4">DOWNLOAD</a></li>
+            </ul>
+            <!-- navbar for mobile -->
+            <ul class="side-nav" id="mobile-demo">
+                <li><a class="waves-effect waves purple-text text-darken-4" target="_blank" href="/assets/pdf/my-cv.pdf">DOWNLOAD</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<div class="section">
+    <div class="row">
+        <div class="col s12 m6 l6">
+            <pdf-viewer [src]="'assets/pdf/my-cv.pdf'" [zoom]="1.1" [page]="1" [original-size]="true" style="display: block;"></pdf-viewer>
+        </div>
+        <div class="col s12 m6 l6">
+            <pdf-viewer [src]="'assets/pdf/my-cv.pdf'" [zoom]="1.0" [page]="2" [original-size]="true" style="display: block;"></pdf-viewer>
+        </div>
+    </div>
+</div>
+<!-- <pdf-viewer [src]="'assets/pdf/my-cv.pdf'" [page]="1" [original-size]="true" style="display: block;"></pdf-viewer>
+<pdf-viewer [src]="'assets/pdf/my-cv.pdf'" [page]="2" [original-size]="true" style="display: block;"></pdf-viewer> -->
+<footer class="page-footer deep-purple lighten-5">
+    <div class="container">
+        <!-- <app-contact></app-contact> -->
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="black-text"><strong>Contact me</strong></h5>
+                <!-- <p class="grey-text text-darken-4">You can contact me via email or the phone</p> -->
+                <ul materialize="collapsible" class="collapsible" data-collapsible="accordion">
+                    <li>
+                        <div class="collapsible-header blue-text text-darken-4">
+                            Give me a message
+                        </div>
+                        <div class="collapsible-body">
+                            <app-contact></app-contact>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col l4 offset-l2 s12">
+                <h5 class="black-text">Info about <a href="/assets/id_rsa.pub">me</a></h5>
+                <ul>
+                    <li><a class="grey-text text-darken-3"><strong>Location</strong> Hanoi, Vietnam</a></li>
+                    <li><a class="grey-text text-darken-3"><strong>Website</strong> giatuyentiensinh.github.io</a></li>
+                    <li><a class="grey-text text-darken-3"><strong>Phone</strong> (+84) 167 629 8972</a></li>
+                    <li><a class="grey-text text-darken-3"><strong>Email</strong> giatuyentiensinh@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container black-text">
+            Copyright © 2017 by Tuyenng
+            <a class="grey-text text-darken-4 right">Tuyen's site</a>
+        </div>
+    </div>
+</footer>

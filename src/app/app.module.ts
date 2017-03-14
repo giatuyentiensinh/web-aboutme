@@ -8,6 +8,7 @@ import { MaterializeModule } from 'angular2-materialize';
 import { AngularFireModule } from 'angularfire2';
 import { TranslateModule, TranslateLoader, TranslateStaticLoader } from 'ng2-translate';
 import { NgGridModule } from 'angular2-grid';
+import { PdfViewerComponent } from 'ng2-pdf-viewer';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { LayoutComponent } from './layout/layout.component';
@@ -16,6 +17,7 @@ import { ProjectComponent } from './project/project.component';
 import { FriendComponent } from './friend/friend.component';
 import { CvComponent } from './cv/cv.component';
 import { ContactComponent } from './contact/contact.component';
+import { PdfComponent } from './pdf/pdf.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/cv', pathMatch: 'full' },
@@ -28,7 +30,8 @@ const routes: Routes = [
       { path: 'project', component: ProjectComponent },
       { path: 'friend', component: FriendComponent }
     ]
-  }
+  },
+  { path: 'pdf', component: PdfComponent}
 ];
 
 export const firebaseConfig = {
@@ -53,6 +56,8 @@ export function createTranslateLoader(http: Http) {
     FriendComponent,
     CvComponent,
     ContactComponent,
+    PdfComponent,
+    PdfViewerComponent
   ],
   imports: [
     BrowserModule,
