@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {NgGrid, NgGridItem, NgGridItemConfig, NgGridConfig} from 'angular2-grid';
 import { MasonryModule } from 'angular2-masonry';
 
 @Component({
