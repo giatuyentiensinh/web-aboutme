@@ -7,7 +7,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { MaterializeModule } from 'angular2-materialize';
 import { AngularFireModule } from 'angularfire2';
 import { TranslateModule, TranslateLoader, TranslateStaticLoader } from 'ng2-translate';
-import { NgGridModule } from 'angular2-grid';
+import { MasonryModule } from 'angular2-masonry';
 import { PdfViewerComponent } from 'ng2-pdf-viewer';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -64,7 +64,7 @@ export function createTranslateLoader(http: Http) {
     FormsModule,
     HttpModule,
     MaterializeModule,
-    NgGridModule,
+    MasonryModule,
     TranslateModule.forRoot({
       provide: TranslateLoader,
             useFactory: (createTranslateLoader),
