@@ -13,11 +13,13 @@ export class SkillComponent implements OnInit {
     'assets/images/mongodb.png',
     'assets/images/elasticsearch.png',
     'assets/images/cassandra.png',
+    'assets/images/spark.png',
     'assets/images/mysql.png',
     'assets/images/materialize.png',
     'assets/images/bootstrap.png',
     'assets/images/rabbitmq.png',
     'assets/images/angularjs.png',
+    'assets/images/neo4j.png',
     'assets/images/titan.png',
     'assets/images/yeoman.png',
     'assets/images/bower.png',
@@ -27,9 +29,13 @@ export class SkillComponent implements OnInit {
   ];
 
   constructor() {
-    
+
   }
 
   ngOnInit() {
+  }
+
+  doStuff($event) {
+    console.log('xin chao');
   }
 }

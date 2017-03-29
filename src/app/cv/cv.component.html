@@ -1,3 +1,23 @@
+<!-- <script type="text/javascript">
+        var options = [
+      {selector: '#about', offset: 50, callback: function(el) {
+        Materialize.toast("This is our ScrollFire Demo!", 1500 );
+      } },
+      {selector: '#experience', offset: 205, callback: function(el) {
+        Materialize.toast("Please continue scrolling!", 1500 );
+      } },
+      {selector: '#work', offset: 400, callback: function(el) {
+        // Materialize.showStaggeredList($(el));
+        Materialize.toast("Please continue scrolling!", 1500 );
+      } },
+      {selector: '#contact', offset: 500, callback: function(el) {
+        // Materialize.fadeInImage($(el));
+        Materialize.toast("Please continue scrolling!", 1500 );
+      } }
+    ];
+    Materialize.scrollFire(options);
+</script> -->
+
 <!-- header -->
 <header class="navbar-fixed">
     <nav class="white">
@@ -67,9 +87,18 @@
                 </div>
             </div>
             <div class="col s12 m7 l7">
-                <a routerLink="/layout/home" routerLinkActive="active" class="right">
-                    <img class="responsive-img" src="assets/images/image-tuyen.jpg" />
-                </a>
+                <div class="ih-item circle effect13 from_left_and_right right">
+                    <a routerLink="/layout/home" routerLinkActive="active">
+                        <div class="img"><img src="assets/images/image-tuyen.jpg" alt="img"></div>
+                        <div class="info">
+                            <div class="info-back">
+                                <h3>Nguyễn Gia Tuyến</h3>
+                                <p>Detail about me</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end normal -->
                 <!-- <div carousel style="height: 250px; perspective: 300px;">
                     <a class="carousel-item" href="javascript:void(0);"><img src="assets/images/image-tuyen5.png"></a>
                     <a class="carousel-item" href="javascript:void(0);"><img src="assets/images/image-tuyen.jpg"></a>
@@ -176,6 +205,17 @@
                         <a href="#">BK Internship</a>
                     </div>
                 </div>
+                <!-- <div class="ih-item square effect1 left_and_right">
+                    <a>
+                        <div class="img">
+                            <img src="assets/images/img_bkinternship.jpeg" class="responsive-img">
+                        </div>
+                        <div class="info">
+                            <h3>BK Internship</h3>
+                            <p>Trang quản lý thực tập viện CNTT_TT ĐHBKHN</p>
+                        </div>
+                    </a>
+                </div> -->
             </div>
             <div class="col s12 m4">
                 <div class="card">
@@ -189,6 +229,17 @@
                         <a href="http://itbee.vn">Itbee</a>
                     </div>
                 </div>
+                <!-- <div class="ih-item square effect1 left_and_right">
+                    <a href="http://itbee.vn">
+                        <div class="img">
+                            <img src="assets/images/itbee.png" class="responsive-img">
+                        </div>
+                        <div class="info">
+                            <h3>Itbee</h3>
+                            <p>The social network in seeking talent, referring jobs for people, friend</p>
+                        </div>
+                    </a>
+                </div> -->
             </div>
             <div class="col s12 m4">
                 <div class="card">
@@ -202,6 +253,17 @@
                         <a href="#">IoT research</a>
                     </div>
                 </div>
+                <!-- <div class="ih-item square effect1 left_and_right">
+                    <a>
+                        <div class="img">
+                            <img src="assets/images/bkiot.png" class="responsive-img">
+                        </div>
+                        <div class="info">
+                            <h3>IoT research</h3>
+                            <p>Building platform OM2M in IoT system</p>
+                        </div>
+                    </a>
+                </div> -->
             </div>
         </div>
     </div>
