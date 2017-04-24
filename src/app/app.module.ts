@@ -9,6 +9,10 @@ import { AngularFireModule } from 'angularfire2';
 import { TranslateModule, TranslateLoader, TranslateStaticLoader } from 'ng2-translate';
 import { MasonryModule } from 'angular2-masonry';
 import { PdfViewerComponent } from 'ng2-pdf-viewer';
+import { VgCoreModule } from 'videogular2/core';
+import { VgControlsModule } from 'videogular2/controls';
+import { VgOverlayPlayModule } from 'videogular2/overlay-play';
+import { VgBufferingModule } from 'videogular2/buffering';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { LayoutComponent } from './layout/layout.component';
@@ -20,26 +24,26 @@ import { ContactComponent } from './contact/contact.component';
 import { PdfComponent } from './pdf/pdf.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/cv', pathMatch: 'full' },
-  // { path: '**', redirectTo: '/cv', pathMatch: 'full' },
-  { path: 'cv', component: CvComponent },
-  {
-    path: 'layout', component: LayoutComponent, children: [
-      { path: 'home', component: HomeComponent },
-      { path: 'skill', component: SkillComponent },
-      { path: 'project', component: ProjectComponent },
-      { path: 'friend', component: FriendComponent }
-    ]
-  },
-  { path: 'pdf', component: PdfComponent}
+   { path: '', redirectTo: '/cv', pathMatch: 'full' },
+   // { path: '**', redirectTo: '/cv', pathMatch: 'full' },
+   { path: 'cv', component: CvComponent },
+   {
+      path: 'layout', component: LayoutComponent, children: [
+         { path: 'home', component: HomeComponent },
+         { path: 'skill', component: SkillComponent },
+         { path: 'project', component: ProjectComponent },
+         { path: 'friend', component: FriendComponent }
+      ]
+   },
+   { path: 'pdf', component: PdfComponent }
 ];
 
 export const firebaseConfig = {
-  apiKey: 'AIzaSyAYJ1r9qkbwCwXsPVmdU24HXJPu8YujGtM',
-  authDomain: 'web-aboutme.firebaseapp.com',
-  databaseURL: 'https://web-aboutme.firebaseio.com',
-  storageBucket: "web-aboutme.appspot.com",
-  messagingSenderId: "695374920782"
+   apiKey: 'AIzaSyAYJ1r9qkbwCwXsPVmdU24HXJPu8YujGtM',
+   authDomain: 'web-aboutme.firebaseapp.com',
+   databaseURL: 'https://web-aboutme.firebaseio.com',
+   storageBucket: "web-aboutme.appspot.com",
+   messagingSenderId: "695374920782"
 };
 
 export function createTranslateLoader(http: Http) {
@@ -47,33 +51,37 @@ export function createTranslateLoader(http: Http) {
 }
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    LayoutComponent,
-    SkillComponent,
-    ProjectComponent,
-    FriendComponent,
-    CvComponent,
-    ContactComponent,
-    PdfComponent,
-    PdfViewerComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    HttpModule,
-    MaterializeModule,
-    MasonryModule,
-    TranslateModule.forRoot({
-      provide: TranslateLoader,
+   declarations: [
+      AppComponent,
+      HomeComponent,
+      LayoutComponent,
+      SkillComponent,
+      ProjectComponent,
+      FriendComponent,
+      CvComponent,
+      ContactComponent,
+      PdfComponent,
+      PdfViewerComponent
+   ],
+   imports: [
+      BrowserModule,
+      FormsModule,
+      HttpModule,
+      MaterializeModule,
+      MasonryModule,
+      VgCoreModule,
+      VgControlsModule,
+      VgOverlayPlayModule,
+      VgBufferingModule,
+      TranslateModule.forRoot({
+         provide: TranslateLoader,
             useFactory: (createTranslateLoader),
             deps: [Http]
-    }),
-    AngularFireModule.initializeApp(firebaseConfig),
-    RouterModule.forRoot(routes)
-  ],
-  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
-  bootstrap: [AppComponent]
+      }),
+      AngularFireModule.initializeApp(firebaseConfig),
+      RouterModule.forRoot(routes)
+   ],
+   providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
+   bootstrap: [AppComponent]
 })
 export class AppModule { }

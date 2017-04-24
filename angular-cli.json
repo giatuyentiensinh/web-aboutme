@@ -18,6 +18,7 @@
         "mobile": false,
         "styles": [
             "../node_modules/materialize-css/dist/css/materialize.min.css",
+            "../node_modules/videogular2/fonts/videogular.css",
             "styles.css",
             "ihover.min.css"
         ],
