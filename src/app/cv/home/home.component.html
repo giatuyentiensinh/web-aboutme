@@ -1,0 +1,329 @@
+<!-- <script type="text/javascript">
+        var options = [
+      {selector: '#about', offset: 50, callback: function(el) {
+        Materialize.toast("This is our ScrollFire Demo!", 1500 );
+      } },
+      {selector: '#experience', offset: 205, callback: function(el) {
+        Materialize.toast("Please continue scrolling!", 1500 );
+      } },
+      {selector: '#work', offset: 400, callback: function(el) {
+        // Materialize.showStaggeredList($(el));
+        Materialize.toast("Please continue scrolling!", 1500 );
+      } },
+      {selector: '#contact', offset: 500, callback: function(el) {
+        // Materialize.fadeInImage($(el));
+        Materialize.toast("Please continue scrolling!", 1500 );
+      } }
+    ];
+    Materialize.scrollFire(options);
+</script> -->
+<!-- header -->
+<header class="navbar-fixed">
+    <nav class="white">
+        <div>
+            <a class="brand-logo waves-effect waves m-l-xl"><strong>Tuyen-ng</strong></a>
+            <!-- activate side-bav in mobile view -->
+            <a href="#" data-activates="mobile-demo" class="button-collapse black-text" materialize="sideNav" [materializeParams]="[{menuWidth: 300, edge: 'left', closeOnClick: true, draggable: true}]">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#experience">EXPERIENCES</a></li>
+                <li><a href="#work">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+            <!-- navbar for mobile -->
+            <ul class="side-nav" id="mobile-demo">
+                <li><a class="waves-effect waves-green" href="#about">ABOUT</a></li>
+                <li><a class="waves-effect waves-green" href="#experience">EXPERIENCES</a></li>
+                <li><a class="waves-effect waves-green" href="#work">PROJECTS</a></li>
+                <li><a class="waves-effect waves-green" href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<!-- /header -->
+<!-- content-->
+<!-- slide -->
+<section materialize="scrollSpy" id="slide" class="deep-purple lighten-5">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m5 l5 b">
+                <h3>Nguyen Gia</h3>
+                <a routerLink="/layout/home" routerLinkActive="active" class="text-name">Tuyen</a>
+                <h4><a href="http://hust.edu.vn" class="grey-text text-lighten-1">HUST Engineering</a></h4>
+                <div class="hide-on-small-only">
+                    <!-- <a class="btn-floating waves-effect waves white center-align button-icon" href="https://www.facebook.com/javaoriami" tooltipped data-position="bottom" data-delay="50" data-tooltip="Facebook"> -->
+                    <a class="btn-floating waves-effect waves white center-align button-icon" href="https://www.facebook.com/javaoriami">
+                        <svg style="width:24px;height:24px;" viewBox="0 0 24 24">
+                            <path fill="#000000" d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z" />
+                        </svg>
+                    </a>
+                    <!-- <a class="btn-floating waves-effect waves white center-align button-icon" href="https://plus.google.com/117976078610191841927" tooltipped data-position="bottom" data-delay="50" data-tooltip="Google +"> -->
+                    <a class="btn-floating waves-effect waves white center-align button-icon" href="https://plus.google.com/117976078610191841927">
+                        <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                            <path fill="#000000" d="M23,11H21V9H19V11H17V13H19V15H21V13H23M8,11V13.4H12C11.8,14.4 10.8,16.4 8,16.4C5.6,16.4 3.7,14.4 3.7,12C3.7,9.6 5.6,7.6 8,7.6C9.4,7.6 10.3,8.2 10.8,8.7L12.7,6.9C11.5,5.7 9.9,5 8,5C4.1,5 1,8.1 1,12C1,15.9 4.1,19 8,19C12,19 14.7,16.2 14.7,12.2C14.7,11.7 14.7,11.4 14.6,11H8Z" />
+                        </svg>
+                    </a>
+                    <!-- <a class="btn-floating waves-effect waves white center-align button-icon" tooltipped data-position="bottom" data-delay="50" data-tooltip="Linkedin"> -->
+                    <a class="btn-floating waves-effect waves white center-align button-icon">
+                        <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                            <path fill="#000000" d="M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z" />
+                        </svg>
+                    </a>
+                    <!-- <a class="btn-floating waves-effect waves white center-align button-icon" tooltipped data-position="bottom" data-delay="50" data-tooltip="Twitter"> -->
+                    <a class="btn-floating waves-effect waves white center-align button-icon">
+                        <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                            <path fill="#000000" d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z" />
+                        </svg>
+                    </a>
+                    <!-- <a class="btn-floating waves-effect waves white center-align button-icon" tooltipped data-position="bottom" data-delay="50" data-tooltip="Pinterest"> -->
+                    <a class="btn-floating waves-effect waves white center-align button-icon">
+                        <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                            <path fill="#000000" d="M13.25,17.25C12.25,17.25 11.29,16.82 10.6,16.1L9.41,20.1L9.33,20.36L9.29,20.34C9.04,20.75 8.61,21 8.12,21C7.37,21 6.75,20.38 6.75,19.62C6.75,19.56 6.76,19.5 6.77,19.44L6.75,19.43L6.81,19.21L9.12,12.26C9.12,12.26 8.87,11.5 8.87,10.42C8.87,8.27 10.03,7.62 10.95,7.62C11.88,7.62 12.73,7.95 12.73,9.26C12.73,10.94 11.61,11.8 11.61,13C11.61,13.94 12.37,14.69 13.29,14.69C16.21,14.69 17.25,12.5 17.25,10.44C17.25,7.71 14.89,5.5 12,5.5C9.1,5.5 6.75,7.71 6.75,10.44C6.75,11.28 7,12.12 7.43,12.85C7.54,13.05 7.6,13.27 7.6,13.5A1.25,1.25 0 0,1 6.35,14.75C5.91,14.75 5.5,14.5 5.27,14.13C4.6,13 4.25,11.73 4.25,10.44C4.25,6.33 7.73,3 12,3C16.27,3 19.75,6.33 19.75,10.44C19.75,13.72 17.71,17.25 13.25,17.25Z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="col s12 m7 l7">
+                <div class="ih-item circle effect13 from_left_and_right right">
+                    <a routerLink="/layout/home" routerLinkActive="active">
+                        <div class="img"><img src="assets/images/image-tuyen.jpg" alt="img"></div>
+                        <div class="info">
+                            <div class="info-back">
+                                <h3>Nguyễn Gia Tuyến</h3>
+                                <p>Detail about me</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- end normal -->
+                <!-- <div carousel style="height: 250px; perspective: 300px;">
+                    <a class="carousel-item" href="javascript:void(0);"><img src="assets/images/image-tuyen5.png"></a>
+                    <a class="carousel-item" href="javascript:void(0);"><img src="assets/images/image-tuyen.jpg"></a>
+                    <a class="carousel-item" href="javascript:void(0);"><img src="assets/images/image-tuyen3.png"></a>
+                    <a class="carousel-item" href="javascript:void(0);"><img src="assets/images/image-tuyen2.png"></a>
+                    <a class="carousel-item" href="javascript:void(0);"><img src="assets/images/image-tuyen4.png"></a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /slide -->
+<!-- about -->
+<section materialize="scrollSpy" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m5 l5">
+                <img materialize="materialbox" class="responsive-img hoverable" data-caption="Đồ Sơn Hải Phòng" src="assets/images/WP_20150621_07_55_14_Pro.jpg">
+                <img materialize="materialbox" class="responsive-img hoverable" data-caption="Itbee Team" src="assets/images/IMG_0586.jpg">
+            </div>
+            <div class="col s12 m7 l7">
+                <h2>About me</h2>
+                <a routerLink="/pdf" routerLinkActive="active" class="right btn-floating blue lighten-5 waves-effect waves-blue button-icon center-align" materialize="tooltip" data-position="bottom" data-delay="50" data-tooltip="My CV">
+                    <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                        <path fill="#000000" d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z" />
+                    </svg>
+                </a>
+                <p>Hi, My name is Tuyen,</p>
+                <p>I'm 22 years old, My hometown in Viet Nam</p>
+                <p>I'm have been practice social network, web server and data analysis with my team for many year. I always want to use my skills to build big project.</p>
+                <p class="divider"></p>
+                <!-- <a ui-sref="app.about" class="right btn-floating deep-purple lighten-3 waves-effect waves-blue" materialize="tooltip" data-position="bottom" data-delay="50" data-tooltip="READ MORE"><i class="material-icons">info</i></a> -->
+                <h3>My skills</h3>
+                <div>
+                    <h5>
+                        Presentation
+                        <span class="right">70%</span>
+                    </h5>
+                    <div class="progress light-blue darken-1">
+                        <div class="determinate light-blue darken-4" style="width: 70%"></div>
+                    </div>
+                </div>
+                <div>
+                    <h5>
+                        Research
+                        <span class="right">80%</span>
+                    </h5>
+                    <div class="progress light-blue darken-1">
+                        <div class="determinate light-blue darken-4" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div>
+                    <h5>
+                        Team work
+                        <span class="right">85%</span>
+                    </h5>
+                    <div class="progress light-blue darken-1">
+                        <div class="determinate light-blue darken-4" style="width: 85%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /about -->
+<!-- Experience -->
+<section materialize="scrollSpy" id="experience" class="deep-purple lighten-5">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m3">
+                <img src="assets/images/playframework.png" class="responsive-img" />
+                <p>Play Framework is a web development framework with Scala and Java APIs that empowers developers to build applications with an ease unparalleled on the JVM.</p>
+            </div>
+            <div class="col s12 m3">
+                <img src="assets/images/spark.png" class="responsive-img" />
+                <p>Apache Spark is a lightning-fast, distributed compute engine for processing large, streaming datasets.</p>
+            </div>
+            <div class="col s12 m3">
+                <img src="assets/images/mysql.png" class="responsive-img" />
+                <p>MySQL is the world's most popular open source database. Whether you are a fast growing web property, technology ISV or large enterprise, MySQL can cost-effectively help you deliver high performance, scalable database applications.</p>
+            </div>
+            <div class="col s12 m3">
+                <img src="assets/images/cassandra.png" class="responsive-img" />
+                <p>The Apache Cassandra database is the right choice when you need scalability and high availability without compromising performance.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /Experience -->
+<!-- Work -->
+<section materialize="scrollSpy" id="work">
+    <div class="container">
+        <h2>Projects</h2>
+        <div class="row">
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img materialize="materialbox" class="responsive-img" data-caption="BK Internship" src="assets/images/img_bkinternship.jpeg">
+                    </div>
+                    <div class="card-content">
+                        <p>Trang quản lý thực tập viện CNTT_TT ĐHBKHN</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">BK Internship</a>
+                    </div>
+                </div>
+                <!-- <div class="ih-item square effect1 left_and_right">
+                    <a>
+                        <div class="img">
+                            <img src="assets/images/img_bkinternship.jpeg" class="responsive-img">
+                        </div>
+                        <div class="info">
+                            <h3>BK Internship</h3>
+                            <p>Trang quản lý thực tập viện CNTT_TT ĐHBKHN</p>
+                        </div>
+                    </a>
+                </div> -->
+            </div>
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img materialize="materialbox" class="responsive-img" data-caption="Itbee" src="assets/images/itbee.png">
+                    </div>
+                    <div class="card-content">
+                        <p>The social network in seeking talent, referring jobs for people, friend</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="http://itbee.vn">Itbee</a>
+                    </div>
+                </div>
+                <!-- <div class="ih-item square effect1 left_and_right">
+                    <a href="http://itbee.vn">
+                        <div class="img">
+                            <img src="assets/images/itbee.png" class="responsive-img">
+                        </div>
+                        <div class="info">
+                            <h3>Itbee</h3>
+                            <p>The social network in seeking talent, referring jobs for people, friend</p>
+                        </div>
+                    </a>
+                </div> -->
+            </div>
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img materialize="materialbox" class="responsive-img" data-caption="BK IoT" src="assets/images/bkiot.png">
+                    </div>
+                    <div class="card-content">
+                        <p>Building platform OM2M in IoT system</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">IoT research</a>
+                    </div>
+                </div>
+                <!-- <div class="ih-item square effect1 left_and_right">
+                    <a>
+                        <div class="img">
+                            <img src="assets/images/bkiot.png" class="responsive-img">
+                        </div>
+                        <div class="info">
+                            <h3>IoT research</h3>
+                            <p>Building platform OM2M in IoT system</p>
+                        </div>
+                    </a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /Work -->
+<!-- /content-->
+<!-- footer -->
+<footer materialize="scrollSpy" id="contact" class="page-footer deep-purple lighten-5">
+    <div class="container">
+        <!-- <app-contact></app-contact> -->
+        <!-- <ul materialize="collapsible" class="collapsible" data-collapsible="accordion">
+            <li>
+                <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+                <div class="collapsible-body">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+                <div class="collapsible-body">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+                <div class="collapsible-body">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </li>
+        </ul> -->
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="black-text"><strong>Contact me</strong></h5>
+                <!-- <p class="grey-text text-darken-4">You can contact me via email or the phone</p> -->
+                <ul materialize="collapsible" class="collapsible" data-collapsible="accordion">
+                    <li>
+                        <div class="collapsible-header blue-text text-darken-4">
+                            Give me a message
+                        </div>
+                        <div class="collapsible-body">
+                            <app-contact></app-contact>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col l4 offset-l2 s12">
+                <h5 class="black-text">Info about me</h5>
+                <ul>
+                    <li><a class="grey-text text-darken-3"><strong>Location</strong> Hanoi, Vietnam</a></li>
+                    <li><a class="grey-text text-darken-3"><strong>Website</strong> giatuyentiensinh.github.io</a></li>
+                    <li><a class="grey-text text-darken-3"><strong>Phone</strong> (+84) 167 629 8972</a></li>
+                    <li><a class="grey-text text-darken-3"><strong>Email</strong> giatuyentiensinh@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container black-text">
+            Copyright © 2017 by Tuyenng
+            <a class="grey-text text-darken-4 right">Tuyen's site</a>
+        </div>
+    </div>
+</footer>
+<!-- /footer -->

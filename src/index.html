@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="vi" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -10,103 +10,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <style type="text/css">
-    .loader {
-        position: relative;
-        padding-top: 100px;
-        width: 40px;
-        margin: auto;
-    }
-    
-    .loader .circle {
-        position: absolute;
-        width: 76px;
-        height: 76px;
-        opacity: 0;
-        transform: rotate(225deg);
-        animation-iteration-count: infinite;
-        animation-name: orbit;
-        animation-duration: 5.5s;
-    }
-    
-    .loader .circle:after {
-        content: '';
-        position: absolute;
-        width: 12px;
-        height: 12px;
-        border-radius: 12px;
-        /*background: linear-gradient(white, red, blue, green);*/
-        /*background: repeating-radial-gradient(red, yellow 10%, green 15%);*/
-        /*background: radial-gradient(circle, red, yellow, green);*/
-        background: linear-gradient(to right, #36f4eb , #0072ff);
-        /*background: linear-gradient(to right, rgba(121, 7, 116, 0.62), #FF9800);*/
-        /* Pick a color */
-    }
-    
-    .loader .circle:nth-child(2) {
-        animation-delay: 240ms;
-    }
-    
-    .loader .circle:nth-child(3) {
-        animation-delay: 480ms;
-    }
-    
-    .loader .circle:nth-child(4) {
-        animation-delay: 720ms;
-    }
-    
-    .loader .circle:nth-child(5) {
-        animation-delay: 960ms;
-    }
-    
-    @keyframes orbit {
-        0% {
-            transform: rotate(225deg);
-            opacity: 1;
-            animation-timing-function: ease-out;
-        }
-        7% {
-            transform: rotate(345deg);
-            animation-timing-function: linear;
-        }
-        30% {
-            transform: rotate(455deg);
-            animation-timing-function: ease-in-out;
-        }
-        39% {
-            transform: rotate(690deg);
-            animation-timing-function: linear;
-        }
-        70% {
-            transform: rotate(815deg);
-            opacity: 1;
-            animation-timing-function: ease-out;
-        }
-        75% {
-            transform: rotate(945deg);
-            animation-timing-function: ease-out;
-        }
-        76% {
-            transform: rotate(945deg);
-            opacity: 0;
-        }
-        100% {
-            transform: rotate(945deg);
-            opacity: 0;
-        }
-    }
-    
-    .text-slogan {
-        font-size: 20px;
-        text-align: center;
-        padding-top: 50px;
-    }
-    </style>
 </head>
 
 <body>
     <app-root>
-        <div class="text-slogan">
+        <!-- <div class="text-slogan"> -->
+        <div style="font-size: 20px;text-align: center;padding-top: 50px;">
             Kẹo thì ngọt. Len thì rối. Nước khó nắm bắt...
             <p>Nhưng tất cả rồi sẽ ổn thôi</p>
             <strong id="time"></strong>

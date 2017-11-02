@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="flow-text m-l">
+        <h1 class="pink-text text-darken-4" translate="SKILL">SKILL</h1>
+    </div>
+</div>
+<div style="background: url('/assets/images/swirl_pattern.png')">
+    <div class="container">
+        <masonry [options]="{ transitionDuration: '0.8s', gutter: 15, percentPosition: true }">
+            <masonry-brick class="brick" *ngFor="let image of images" style="margin-bottom: 10px; margin-top: 10px;">
+                <!-- {{brick.title}} -->
+                <img [src]="image" class="responsive-img hoverable" />
+                <!-- <a class="flow-text teal-text text-accent-4 m">image.name</a> -->
+            </masonry-brick>
+        </masonry>
+    </div>
+</div>

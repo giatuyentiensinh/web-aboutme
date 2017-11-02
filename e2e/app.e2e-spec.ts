@@ -1,14 +1,14 @@
-import { WebAboutmePage } from './app.po';
+import { TuyenngWebPage } from './app.po';
 
-describe('web-aboutme App', function() {
-  let page: WebAboutmePage;
+describe('tuyenng-web App', () => {
+  let page: TuyenngWebPage;
 
   beforeEach(() => {
-    page = new WebAboutmePage();
+    page = new TuyenngWebPage();
   });
 
-  it('should display message saying app works', () => {
+  it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect(page.getParagraphText()).toEqual('Welcome to app!!');
   });
 });
